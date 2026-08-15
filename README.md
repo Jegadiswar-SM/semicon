@@ -1,102 +1,150 @@
-# SEM Wafer Pattern Localization Handover
+# SEM Wafer Pattern Localization
 
-This repository contains a classical, non-deep-learning Python solution for the wafer-navigation pattern-localization problem. It generates synthetic SEM-like FinFET pattern pairs, localizes the high-resolution reference footprint inside the low-resolution search image using normalized cross-correlation, and evaluates the method across randomized cases.
+This repository contains a classical, non-deep-learning solution for locating
+a 1000×1000 high-resolution wafer reference inside a 1000×1000 search image at
+exactly 10× lower spatial resolution.
 
-## What Is Done
+## Components
 
-- `dataset_generator.py`
-  - Defines `pattern(x_nm, y_nm)` as a continuous physical-coordinate FinFET-style intensity function.
-  - Uses illustrative public-domain dimensions only: the default fin pitch is `34 nm`, based on public 10 nm-class FinFET references, not proprietary process data.
-  - Rasterizes `reference.png` directly at `1 nm/px` and `search.png` directly at `10 nm/px`.
-  - Does not create the search image by resizing the reference.
-  - Adds independent mixed Poisson shot noise plus Gaussian read/electronic noise to each capture.
-  - Makes search images noisier than reference images.
-  - Adds SEM-like edge brightening from the clean-pattern gradient magnitude.
-  - Provides the requested CLI:
+- `dataset_generator.py`: independently samples a continuous physical-coordinate
+  FinFET-like pattern at 1 nm/px and 10 nm/px, adds independent SEM-like noise,
+  and writes ground truth.
+- `localize.py`: area-downsamples the reference, performs configurable
+  upsampled normalized cross-correlation, applies the search-center tiebreak,
+  and refines the result subpixel-wise.
+- `evaluate.py`: runs 30 randomized cases, records primary metrics, creates a
+  periodic failure plot, and sweeps threshold/upsample settings.
+- `docs/report.md`: methodology, metrics, failure analysis, and citations.
 
-```bash
-python3 dataset_generator.py --seed 1 --out_dir phase1_sample --sanity_check
-```
+## Commands
 
-- `localize.py`
-  - Loads grayscale or color inputs and converts to grayscale/luminance for matching.
-  - Downsamples the `1000x1000` reference to a `100x100` template with `cv2.INTER_AREA`.
-  - Runs `cv2.matchTemplate(..., cv2.TM_CCOEFF_NORMED)`.
-  - Collects local maxima at `>= 0.98 * global_max`.
-  - Applies the required tiebreak rule: choose the candidate closest to the search image center.
-  - Converts top-left match coordinates to search-image center coordinates.
-  - Refines the selected peak with 3x3 parabolic subpixel interpolation.
-  - Reports `(x, y, confidence, time_ms)`.
-
-```bash
-python3 localize.py --reference phase1_sample/reference.png --search phase1_sample/search.png
-```
-
-- `evaluate.py`
-  - Generates `36` reproducible randomized pairs with varied asymmetric noise.
-  - Includes deliberately ambiguous periodic cases.
-  - Uses `TOLERANCE_PX = 1.0`.
-  - Writes `evaluation_results/results.json`.
-  - Saves `evaluation_results/failure_case.png`.
-  - Prints the structural failure explanation for periodic near-tied peaks.
-
-```bash
-python3 evaluate.py
-```
-
-- Documentation and references
-  - `docs/report.md` summarizes methodology, metrics, and the failure case.
-  - `docs/citations.md` lists the public sources referenced in the report.
-  - `README.md` is this handover document.
-
-## Current Verified Results
-
-From the latest `python3 evaluate.py` run:
-
-- Pairs: `36`
-- Tolerance: `1.0 px`
-- Hits: `14/36`
-- Hit rate: `38.89%`
-- Mean localization time: `11.738 ms`
-- Std localization time: `0.616 ms`
-- Concrete failure case:
-  - Ground truth: `(472.800, 232.923)`
-  - Predicted: `(500.001, 232.944)`
-  - Error: `27.201 px`
-  - Plot: `evaluation_results/failure_case.png`
-
-The low hit rate is expected for this deliberately periodic benchmark and the specified center-tiebreak rule. When repeated fin periods produce near-identical NCC peaks, the localizer has no unique visual evidence to distinguish the true repeated period from another one closer to the search center.
-
-## How It Works
-
-1. The generator chooses a reference center in continuous nanometer world coordinates.
-2. It chooses a valid random footprint position inside the larger `10 um x 10 um` search field.
-3. The same continuous pattern function is sampled independently for:
-   - reference: `1000x1000`, `1 nm/px`
-   - search: `1000x1000`, `10 nm/px`
-4. SEM-style augmentation is applied after clean rasterization:
-   - Poisson shot noise
-   - Gaussian read noise
-   - edge brightening from gradient magnitude
-5. The localizer area-averages the reference to `100x100`.
-6. NCC finds all near-tied local maxima.
-7. The required center-distance heuristic picks one candidate.
-8. Parabolic interpolation estimates subpixel peak location.
-
-## What Is Remaining
-
-- RGB bonus mode from Phase 5 is not implemented.
-- No rotation, distortion, or scale-variation knobs are implemented. The spec fixes scale at exactly `10x`, and the core method assumes that exact geometry.
-- A stronger production localizer would need extra disambiguating information for repeated-period patterns, such as stage prior, larger non-periodic context, multiple templates, or a different acquisition plan. That is outside the requested NCC-only architecture.
-
-## Reproducibility Notes
-
-- All generation randomness is seed-based and reproducible.
-- The environment here uses `python3`; if your shell has a `python` alias, the same commands also work with `python`.
-- Install dependencies with:
+Install dependencies:
 
 ```bash
 python3 -m pip install -r requirements.txt
 ```
 
-# semicon
+Generate a sample:
+
+```bash
+python3 dataset_generator.py --seed 1 --out_dir phase1_sample --sanity_check
+```
+
+Run localization; output is JSON:
+
+```bash
+python3 localize.py --reference phase1_sample/reference.png --search phase1_sample/search.png
+```
+
+Run the evaluation:
+
+```bash
+python3 evaluate.py
+```
+
+## Current evaluation
+
+The primary configuration (`upsample=4`, threshold `0.98`) achieved 14/30
+within 1 px, with 855.020 ms mean measured computation time. The best sweep
+setting was 4× with threshold `0.995`: 17/30, or 56.67%. Periodic fins create
+near-identical candidate peaks, so the required center tiebreak can select a
+wrong repeated period; this is an inherent ambiguity of appearance-only NCC.
+
+## Geometric / chamfer contour matching: research finding
+
+Chamfer matching is a plausible geometric pre-filter, but it has not been
+implemented. The original Barrow et al. paper introduced matching collections
+of curve fragments by distance rather than comparing every image intensity
+value. Borgefors later developed hierarchical chamfer matching with distance
+transforms and multiresolution processing, reporting robustness to noise and
+other disturbances. Oriented chamfer variants add an edge-direction penalty to
+reject geometrically incompatible clutter.
+
+Relevant papers:
+
+- [Barrow et al., *Parametric Correspondence and Chamfer Matching* (1977)](https://people.eecs.berkeley.edu/~malik/cs294/chamfer77.pdf)
+- [Borgefors, *Hierarchical Chamfer Matching: A Parametric Edge Matching Algorithm* (1988)](https://people.eecs.berkeley.edu/~malik/cs294/borgefors88.pdf)
+- [Shotton et al., *Contour-Based Learning for Object Detection* (2005), oriented chamfer background](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/iccv05.pdf)
+
+### Proposed pre-NCC design
+
+If a geometric stage is tested later, it should remain a candidate-generation
+stage before the existing NCC pipeline:
+
+1. Convert the already area-matched reference and search images to edge maps,
+   preferably with gradient magnitude and orientation rather than a brittle
+   single intensity threshold.
+2. Build a truncated Euclidean distance transform of the search edge map.
+3. Slide the reference edge template over the search image and score each
+   location by the mean distance-transform value at template edge pixels.
+4. Optionally add an orientation mismatch penalty and use a coarse-to-fine
+   distance-transform pyramid for speed.
+5. Keep the best geometric locations as a small candidate set, then run the
+   existing intensity NCC and subpixel refinement on those candidates. The
+   final reported answer and mandated search-center tiebreak must still come
+   from the NCC architecture.
+
+This could improve tolerance to independent SEM brightness/noise and partially
+missing edges. It will not solve the central failure mode: a perfectly
+periodic fin grating produces the same edge geometry at every fin period, so
+the chamfer surface also has repeated near-ties. Gate-bar context or a stage
+prior is still required to disambiguate those cases. At 10 nm/px, aggressive
+edge extraction can also erase narrow fins, so thresholds and orientation
+penalties would require a separate ablation and reproducible benchmark.
+
+The core solution intentionally remains NCC-only. The geometric stage is a
+research option, not a silent algorithm substitution.
+
+## Status, remaining work, and final goal
+
+Completed:
+
+- Phase 1: continuous-coordinate independent rasterization, asymmetric
+  Poisson/Gaussian SEM noise, edge effect, seeded generation, and sanity plot.
+- Phase 2: named classical-NCC pipeline with area downsampling, upsampled
+  correlation, local-maxima collection, center tiebreak, subpixel refinement,
+  confidence, timing, and JSON CLI.
+- Phase 3: 30-pair evaluation, threshold/upsample sweep, drift-proxy buckets,
+  and periodic failure plot.
+- Phase 4: methodology, metrics, failure analysis, and verified citations in
+  `docs/report.md` and `docs/citations.md`.
+
+Remaining:
+
+- Optional gradient-profile subpixel ablation is research-only and is not part
+  of the core result; its interrupted run should be rerun only if that ablation
+  is needed for the presentation.
+- RGB, rotation, distortion, and variable-scale modes remain intentionally
+  unimplemented.
+- The current validated Phase 1 generator uses random valid placement; its
+  evaluation reports placement offset as a drift proxy. A bounded Gaussian
+  drift generator would be a separate Phase 1 change and is not silently mixed
+  into this submission.
+- If organizers resolve the Slide 4 versus Slide 6 tiebreak wording conflict,
+  update `select_by_center_tiebreak` and rerun the evaluation.
+
+The final goal is an explainable, reproducible classical solution that accepts
+independently captured reference/search images and reports the footprint center
+in search pixels, equivalent nanometers, confidence, and runtime. It should be
+presented as a successful NCC localization pipeline with a measured speed/
+accuracy tradeoff and an explicit structural limitation for periodic patterns,
+not as a claim that appearance-only matching can recover information absent
+from both images.
+
+## Suggested final presentation
+
+1. **Problem and geometry:** 1 nm/px reference, 10 nm/px search, exact 100×100
+   search footprint.
+2. **Phase 1 data validity:** continuous physical sampling, independent noise,
+   edge effect, and sanity-check image.
+3. **NCC pipeline:** six named steps, 4× upsampling, candidate threshold, and
+   search-center tiebreak.
+4. **Measured results:** 30-pair accuracy, timing, threshold/upsample table,
+   and placement-offset/error plot.
+5. **Failure analysis:** correlation surface with ground truth/prediction;
+   explain repeated fin-period ambiguity as structural.
+6. **Research direction and close:** geometric/chamfer matching as a possible
+   pre-NCC candidate filter, why it may improve noise robustness, and why it
+   cannot remove periodic ambiguity without additional context.
+
+RGB mode, rotation, distortion, and scale variation are not implemented.

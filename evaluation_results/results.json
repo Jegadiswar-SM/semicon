@@ -1,0 +1,2836 @@
+{
+  "tolerance_px": 1.0,
+  "total_cases": 100,
+  "failure_case": {
+    "index": 0,
+    "seed": 1000,
+    "is_array_core": true,
+    "placement_offset_nm": 2684.583482017511,
+    "ground_truth": {
+      "center_x": 472.8,
+      "center_y": 232.92314829021095
+    },
+    "prediction": {
+      "center_x": 95.2587255373692,
+      "center_y": 233.06704365896138,
+      "confidence": 0.1761305167198181
+    },
+    "error_px": 377.5413018846344,
+    "hit": false,
+    "time_ms": 35.93409999666619,
+    "reference_noise": {
+      "peak_electrons": 1600.0,
+      "read_noise_sigma": 0.007,
+      "edge_gain": 0.08
+    },
+    "search_noise": {
+      "peak_electrons": 240.0,
+      "read_noise_sigma": 0.02,
+      "edge_gain": 0.12
+    },
+    "failure_image": "evaluation_results\\plots\\0_result_hit_False.png",
+    "explanation": "Periodic fin patterns produce multiple near-identical structural frequencies. The Hybrid Engine uses NCC for global search, which randomly locks onto one of the identical array periods. Phase Correlation then perfectly refines that wrong period to sub-pixel accuracy. This is a mathematical limitation of appearance-based matching on infinite grids, not an implementation bug."
+  },
+  "records": [
+    {
+      "index": 0,
+      "seed": 1000,
+      "is_array_core": true,
+      "placement_offset_nm": 2684.583482017511,
+      "ground_truth": {
+        "center_x": 472.8,
+        "center_y": 232.92314829021095
+      },
+      "prediction": {
+        "center_x": 95.2587255373692,
+        "center_y": 233.06704365896138,
+        "confidence": 0.1761305167198181
+      },
+      "error_px": 377.5413018846344,
+      "hit": false,
+      "time_ms": 35.93409999666619,
+      "reference_noise": {
+        "peak_electrons": 1600.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 240.0,
+        "read_noise_sigma": 0.02,
+        "edge_gain": 0.12
+      }
+    },
+    {
+      "index": 1,
+      "seed": 1001,
+      "is_array_core": false,
+      "placement_offset_nm": 4274.981987508314,
+      "ground_truth": {
+        "center_x": 218.9206191937367,
+        "center_y": 822.1010580870125
+      },
+      "prediction": {
+        "center_x": 218.8290450886043,
+        "center_y": 822.0381709683129,
+        "confidence": 0.550252985906601
+      },
+      "error_px": 0.11108828214144435,
+      "hit": true,
+      "time_ms": 36.72060000099009,
+      "reference_noise": {
+        "peak_electrons": 1825.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 450.0,
+        "read_noise_sigma": 0.05,
+        "edge_gain": 0.16
+      }
+    },
+    {
+      "index": 2,
+      "seed": 1002,
+      "is_array_core": false,
+      "placement_offset_nm": 2440.3761054531114,
+      "ground_truth": {
+        "center_x": 722.8510853613719,
+        "center_y": 400.54272719442037
+      },
+      "prediction": {
+        "center_x": 722.5599856794017,
+        "center_y": 400.7407542406069,
+        "confidence": 0.661745078086853
+      },
+      "error_px": 0.35207064044665787,
+      "hit": true,
+      "time_ms": 38.25639999922714,
+      "reference_noise": {
+        "peak_electrons": 2050.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 660.0,
+        "read_noise_sigma": 0.044,
+        "edge_gain": 0.2
+      }
+    },
+    {
+      "index": 3,
+      "seed": 1003,
+      "is_array_core": false,
+      "placement_offset_nm": 1447.9160873150154,
+      "ground_truth": {
+        "center_x": 495.2113944699662,
+        "center_y": 644.7124017357668
+      },
+      "prediction": {
+        "center_x": 495.17389973850095,
+        "center_y": 644.7139898234062,
+        "confidence": 0.5416355177879334
+      },
+      "error_px": 0.03752834808516574,
+      "hit": true,
+      "time_ms": 39.513499999884516,
+      "reference_noise": {
+        "peak_electrons": 2275.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 380.0,
+        "read_noise_sigma": 0.038,
+        "edge_gain": 0.13999999999999999
+      }
+    },
+    {
+      "index": 4,
+      "seed": 1004,
+      "is_array_core": false,
+      "placement_offset_nm": 3426.4115949160505,
+      "ground_truth": {
+        "center_x": 174.6296287687322,
+        "center_y": 392.5891732525137
+      },
+      "prediction": {
+        "center_x": 174.83864367848778,
+        "center_y": 392.82349279910795,
+        "confidence": 0.7027850742340088
+      },
+      "error_px": 0.31399503565544135,
+      "hit": true,
+      "time_ms": 32.828499999595806,
+      "reference_noise": {
+        "peak_electrons": 2500.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 590.0,
+        "read_noise_sigma": 0.032,
+        "edge_gain": 0.18
+      }
+    },
+    {
+      "index": 5,
+      "seed": 1005,
+      "is_array_core": false,
+      "placement_offset_nm": 2284.7669052711,
+      "ground_truth": {
+        "center_x": 308.5556255309934,
+        "center_y": 624.7022437584487
+      },
+      "prediction": {
+        "center_x": 308.4949906522328,
+        "center_y": 624.8056227458485,
+        "confidence": 0.7044025337219239
+      },
+      "error_px": 0.1198490865969066,
+      "hit": true,
+      "time_ms": 31.107999999221647,
+      "reference_noise": {
+        "peak_electrons": 1600.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 310.0,
+        "read_noise_sigma": 0.026000000000000002,
+        "edge_gain": 0.12
+      }
+    },
+    {
+      "index": 6,
+      "seed": 1006,
+      "is_array_core": false,
+      "placement_offset_nm": 2981.438046951987,
+      "ground_truth": {
+        "center_x": 318.048169468258,
+        "center_y": 263.8152002260158
+      },
+      "prediction": {
+        "center_x": 318.1535537800381,
+        "center_y": 263.9752038633054,
+        "confidence": 0.7157377285957336
+      },
+      "error_px": 0.19159075425311597,
+      "hit": true,
+      "time_ms": 44.996699998591794,
+      "reference_noise": {
+        "peak_electrons": 1825.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 520.0,
+        "read_noise_sigma": 0.02,
+        "edge_gain": 0.16
+      }
+    },
+    {
+      "index": 7,
+      "seed": 1007,
+      "is_array_core": false,
+      "placement_offset_nm": 3018.4637527346586,
+      "ground_truth": {
+        "center_x": 628.6356616267915,
+        "center_y": 226.9357203448836
+      },
+      "prediction": {
+        "center_x": 628.2243006108363,
+        "center_y": 227.05312034689814,
+        "confidence": 0.5773981036186219
+      },
+      "error_px": 0.4277857476830121,
+      "hit": true,
+      "time_ms": 41.34329999942565,
+      "reference_noise": {
+        "peak_electrons": 2050.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 240.0,
+        "read_noise_sigma": 0.05,
+        "edge_gain": 0.2
+      }
+    },
+    {
+      "index": 8,
+      "seed": 1008,
+      "is_array_core": false,
+      "placement_offset_nm": 5042.22613376175,
+      "ground_truth": {
+        "center_x": 245.6895462928176,
+        "center_y": 935.3925090939746
+      },
+      "prediction": {
+        "center_x": 245.48821212238505,
+        "center_y": 935.6370272947963,
+        "confidence": 0.65908675365448
+      },
+      "error_px": 0.31674058583778647,
+      "hit": true,
+      "time_ms": 57.1429999981774,
+      "reference_noise": {
+        "peak_electrons": 2275.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 450.0,
+        "read_noise_sigma": 0.044,
+        "edge_gain": 0.13999999999999999
+      }
+    },
+    {
+      "index": 9,
+      "seed": 1009,
+      "is_array_core": true,
+      "placement_offset_nm": 4499.264935246526,
+      "ground_truth": {
+        "center_x": 95.40000000000003,
+        "center_y": 303.1937765836932
+      },
+      "prediction": {
+        "center_x": 270.2198838135197,
+        "center_y": 302.5041588277841,
+        "confidence": 0.09979027004241943
+      },
+      "error_px": 174.82124398717045,
+      "hit": false,
+      "time_ms": 38.664400002744514,
+      "reference_noise": {
+        "peak_electrons": 2500.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 660.0,
+        "read_noise_sigma": 0.038,
+        "edge_gain": 0.18
+      }
+    },
+    {
+      "index": 10,
+      "seed": 1010,
+      "is_array_core": false,
+      "placement_offset_nm": 5736.490266659089,
+      "ground_truth": {
+        "center_x": 875.9090598021147,
+        "center_y": 933.3192639999228
+      },
+      "prediction": {
+        "center_x": 875.8509117519166,
+        "center_y": 933.153153595933,
+        "confidence": 0.6553399734497071
+      },
+      "error_px": 0.17599392618925286,
+      "hit": true,
+      "time_ms": 41.51849999834667,
+      "reference_noise": {
+        "peak_electrons": 1600.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 380.0,
+        "read_noise_sigma": 0.032,
+        "edge_gain": 0.12
+      }
+    },
+    {
+      "index": 11,
+      "seed": 1011,
+      "is_array_core": false,
+      "placement_offset_nm": 4565.139405147792,
+      "ground_truth": {
+        "center_x": 241.34012118859079,
+        "center_y": 123.83508273950055
+      },
+      "prediction": {
+        "center_x": 241.64484443737763,
+        "center_y": 123.90109242297547,
+        "confidence": 0.7200259365081787
+      },
+      "error_px": 0.3117908540410812,
+      "hit": true,
+      "time_ms": 48.92749999999069,
+      "reference_noise": {
+        "peak_electrons": 1825.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 590.0,
+        "read_noise_sigma": 0.026000000000000002,
+        "edge_gain": 0.16
+      }
+    },
+    {
+      "index": 12,
+      "seed": 1012,
+      "is_array_core": false,
+      "placement_offset_nm": 4007.821928190874,
+      "ground_truth": {
+        "center_x": 264.5927775983081,
+        "center_y": 824.3606106203349
+      },
+      "prediction": {
+        "center_x": 264.5831548735521,
+        "center_y": 824.3010263042404,
+        "confidence": 0.6661640048980713
+      },
+      "error_px": 0.060356338160802034,
+      "hit": true,
+      "time_ms": 35.06019999986165,
+      "reference_noise": {
+        "peak_electrons": 2050.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 310.0,
+        "read_noise_sigma": 0.02,
+        "edge_gain": 0.2
+      }
+    },
+    {
+      "index": 13,
+      "seed": 1013,
+      "is_array_core": false,
+      "placement_offset_nm": 1624.0049466264952,
+      "ground_truth": {
+        "center_x": 655.3936321670923,
+        "center_y": 452.8116566449756
+      },
+      "prediction": {
+        "center_x": 655.3585837591361,
+        "center_y": 452.81031357377213,
+        "confidence": 0.6254408780932427
+      },
+      "error_px": 0.03507413207082281,
+      "hit": true,
+      "time_ms": 32.70669999983511,
+      "reference_noise": {
+        "peak_electrons": 2275.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 520.0,
+        "read_noise_sigma": 0.05,
+        "edge_gain": 0.13999999999999999
+      }
+    },
+    {
+      "index": 14,
+      "seed": 1014,
+      "is_array_core": false,
+      "placement_offset_nm": 5699.29343584873,
+      "ground_truth": {
+        "center_x": 858.168326286536,
+        "center_y": 943.3225763754715
+      },
+      "prediction": {
+        "center_x": 858.1990905860974,
+        "center_y": 943.1525895450748,
+        "confidence": 0.5983698696136475
+      },
+      "error_px": 0.1727482695596075,
+      "hit": true,
+      "time_ms": 27.781199998571537,
+      "reference_noise": {
+        "peak_electrons": 2500.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 240.0,
+        "read_noise_sigma": 0.044,
+        "edge_gain": 0.18
+      }
+    },
+    {
+      "index": 15,
+      "seed": 1015,
+      "is_array_core": false,
+      "placement_offset_nm": 3878.0372692041647,
+      "ground_truth": {
+        "center_x": 627.1746078360012,
+        "center_y": 133.64177403103906
+      },
+      "prediction": {
+        "center_x": 626.9939456601309,
+        "center_y": 133.79466828343573,
+        "confidence": 0.6834994876861572
+      },
+      "error_px": 0.23667588429356248,
+      "hit": true,
+      "time_ms": 41.413000002648914,
+      "reference_noise": {
+        "peak_electrons": 1600.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 450.0,
+        "read_noise_sigma": 0.038,
+        "edge_gain": 0.12
+      }
+    },
+    {
+      "index": 16,
+      "seed": 1016,
+      "is_array_core": false,
+      "placement_offset_nm": 1500.0400052316138,
+      "ground_truth": {
+        "center_x": 368.261558496255,
+        "center_y": 571.7369026590706
+      },
+      "prediction": {
+        "center_x": 368.2726631928027,
+        "center_y": 571.9355468145161,
+        "confidence": 0.6764273984909057
+      },
+      "error_px": 0.19895430324095095,
+      "hit": true,
+      "time_ms": 47.490900000411784,
+      "reference_noise": {
+        "peak_electrons": 1825.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 660.0,
+        "read_noise_sigma": 0.032,
+        "edge_gain": 0.16
+      }
+    },
+    {
+      "index": 17,
+      "seed": 1017,
+      "is_array_core": false,
+      "placement_offset_nm": 4346.690406209087,
+      "ground_truth": {
+        "center_x": 925.3214528693912,
+        "center_y": 589.659559464518
+      },
+      "prediction": {
+        "center_x": 925.6919480401332,
+        "center_y": 589.8350424485343,
+        "confidence": 0.6644407838821411
+      },
+      "error_px": 0.4099523743343472,
+      "hit": true,
+      "time_ms": 45.06010000113747,
+      "reference_noise": {
+        "peak_electrons": 2050.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 380.0,
+        "read_noise_sigma": 0.026000000000000002,
+        "edge_gain": 0.2
+      }
+    },
+    {
+      "index": 18,
+      "seed": 1018,
+      "is_array_core": true,
+      "placement_offset_nm": 4371.300574915964,
+      "ground_truth": {
+        "center_x": 833.2,
+        "center_y": 782.9495487937847
+      },
+      "prediction": {
+        "center_x": 565.0893744014188,
+        "center_y": 782.9359926245324,
+        "confidence": 0.15801103687286377
+      },
+      "error_px": 268.11062594129373,
+      "hit": false,
+      "time_ms": 46.87959999864688,
+      "reference_noise": {
+        "peak_electrons": 2275.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 590.0,
+        "read_noise_sigma": 0.02,
+        "edge_gain": 0.13999999999999999
+      }
+    },
+    {
+      "index": 19,
+      "seed": 1019,
+      "is_array_core": false,
+      "placement_offset_nm": 2973.7408505231297,
+      "ground_truth": {
+        "center_x": 470.1957478257927,
+        "center_y": 795.8767530797858
+      },
+      "prediction": {
+        "center_x": 469.9387886694919,
+        "center_y": 795.825951427427,
+        "confidence": 0.6154132347106933
+      },
+      "error_px": 0.26193284614421564,
+      "hit": true,
+      "time_ms": 31.30559999772231,
+      "reference_noise": {
+        "peak_electrons": 2500.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 310.0,
+        "read_noise_sigma": 0.05,
+        "edge_gain": 0.18
+      }
+    },
+    {
+      "index": 20,
+      "seed": 1020,
+      "is_array_core": false,
+      "placement_offset_nm": 4248.838607305545,
+      "ground_truth": {
+        "center_x": 118.12350047478556,
+        "center_y": 686.2703256551353
+      },
+      "prediction": {
+        "center_x": 117.89134173107921,
+        "center_y": 686.0549517615154,
+        "confidence": 0.6859501498222351
+      },
+      "error_px": 0.31667585372470214,
+      "hit": true,
+      "time_ms": 41.921000000002095,
+      "reference_noise": {
+        "peak_electrons": 1600.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 520.0,
+        "read_noise_sigma": 0.044,
+        "edge_gain": 0.12
+      }
+    },
+    {
+      "index": 21,
+      "seed": 1021,
+      "is_array_core": false,
+      "placement_offset_nm": 5630.468841727117,
+      "ground_truth": {
+        "center_x": 942.317038077565,
+        "center_y": 151.60736000470814
+      },
+      "prediction": {
+        "center_x": 942.2108607168389,
+        "center_y": 151.7648493650517,
+        "confidence": 0.679304034614563
+      },
+      "error_px": 0.18993822825382228,
+      "hit": true,
+      "time_ms": 32.55960000024061,
+      "reference_noise": {
+        "peak_electrons": 1825.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 240.0,
+        "read_noise_sigma": 0.038,
+        "edge_gain": 0.16
+      }
+    },
+    {
+      "index": 22,
+      "seed": 1022,
+      "is_array_core": false,
+      "placement_offset_nm": 1543.2362242707293,
+      "ground_truth": {
+        "center_x": 580.8329958015573,
+        "center_y": 631.4602876490052
+      },
+      "prediction": {
+        "center_x": 581.0705956797567,
+        "center_y": 631.2137245273452,
+        "confidence": 0.6835349529266358
+      },
+      "error_px": 0.34241360236278967,
+      "hit": true,
+      "time_ms": 48.26390000016545,
+      "reference_noise": {
+        "peak_electrons": 2050.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 450.0,
+        "read_noise_sigma": 0.032,
+        "edge_gain": 0.2
+      }
+    },
+    {
+      "index": 23,
+      "seed": 1023,
+      "is_array_core": false,
+      "placement_offset_nm": 4305.850193423147,
+      "ground_truth": {
+        "center_x": 868.6417560533263,
+        "center_y": 722.5010439884304
+      },
+      "prediction": {
+        "center_x": 868.6696502094231,
+        "center_y": 722.2689499004881,
+        "confidence": 0.7549735375404358
+      },
+      "error_px": 0.23376430352413632,
+      "hit": true,
+      "time_ms": 41.33700000238605,
+      "reference_noise": {
+        "peak_electrons": 2275.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 660.0,
+        "read_noise_sigma": 0.026000000000000002,
+        "edge_gain": 0.13999999999999999
+      }
+    },
+    {
+      "index": 24,
+      "seed": 1024,
+      "is_array_core": false,
+      "placement_offset_nm": 3656.728504548517,
+      "ground_truth": {
+        "center_x": 383.28063273346123,
+        "center_y": 846.5446910063336
+      },
+      "prediction": {
+        "center_x": 383.30345296559983,
+        "center_y": 846.9050091917445,
+        "confidence": 0.7659126487731933
+      },
+      "error_px": 0.36104010543526466,
+      "hit": true,
+      "time_ms": 31.806800001504598,
+      "reference_noise": {
+        "peak_electrons": 2500.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 380.0,
+        "read_noise_sigma": 0.02,
+        "edge_gain": 0.18
+      }
+    },
+    {
+      "index": 25,
+      "seed": 1025,
+      "is_array_core": false,
+      "placement_offset_nm": 3741.6788049016404,
+      "ground_truth": {
+        "center_x": 195.930453715331,
+        "center_y": 281.95570676411353
+      },
+      "prediction": {
+        "center_x": 195.92328438462968,
+        "center_y": 281.9347649071225,
+        "confidence": 0.6636709280014038
+      },
+      "error_px": 0.0221350553859297,
+      "hit": true,
+      "time_ms": 17.54829999845242,
+      "reference_noise": {
+        "peak_electrons": 1600.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 590.0,
+        "read_noise_sigma": 0.05,
+        "edge_gain": 0.12
+      }
+    },
+    {
+      "index": 26,
+      "seed": 1026,
+      "is_array_core": false,
+      "placement_offset_nm": 5002.863666290921,
+      "ground_truth": {
+        "center_x": 225.11312252684158,
+        "center_y": 82.00041479925466
+      },
+      "prediction": {
+        "center_x": 225.4323579750566,
+        "center_y": 81.92752128605746,
+        "confidence": 0.4565632565498352
+      },
+      "error_px": 0.3274518829740781,
+      "hit": true,
+      "time_ms": 32.37959999751183,
+      "reference_noise": {
+        "peak_electrons": 1825.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 310.0,
+        "read_noise_sigma": 0.044,
+        "edge_gain": 0.16
+      }
+    },
+    {
+      "index": 27,
+      "seed": 1027,
+      "is_array_core": true,
+      "placement_offset_nm": 4434.189772807431,
+      "ground_truth": {
+        "center_x": 557.8,
+        "center_y": 60.36429920592189
+      },
+      "prediction": {
+        "center_x": 950.6193526645183,
+        "center_y": 60.411079691995354,
+        "confidence": 0.3344921144485474
+      },
+      "error_px": 392.8193554500403,
+      "hit": false,
+      "time_ms": 32.76249999908032,
+      "reference_noise": {
+        "peak_electrons": 2050.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 520.0,
+        "read_noise_sigma": 0.038,
+        "edge_gain": 0.2
+      }
+    },
+    {
+      "index": 28,
+      "seed": 1028,
+      "is_array_core": false,
+      "placement_offset_nm": 3273.0061865442663,
+      "ground_truth": {
+        "center_x": 657.7809461266698,
+        "center_y": 213.24074904034342
+      },
+      "prediction": {
+        "center_x": 657.7905668057593,
+        "center_y": 213.1596579275892,
+        "confidence": 0.5901780290603638
+      },
+      "error_px": 0.08165981896784413,
+      "hit": true,
+      "time_ms": 41.705999999976484,
+      "reference_noise": {
+        "peak_electrons": 2275.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 240.0,
+        "read_noise_sigma": 0.032,
+        "edge_gain": 0.13999999999999999
+      }
+    },
+    {
+      "index": 29,
+      "seed": 1029,
+      "is_array_core": false,
+      "placement_offset_nm": 4954.65915986144,
+      "ground_truth": {
+        "center_x": 94.27688254980693,
+        "center_y": 215.6143008685467
+      },
+      "prediction": {
+        "center_x": 94.18094476290179,
+        "center_y": 215.78201742491112,
+        "confidence": 0.7096241679191589
+      },
+      "error_px": 0.19321724103969753,
+      "hit": true,
+      "time_ms": 35.92990000106511,
+      "reference_noise": {
+        "peak_electrons": 2500.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 450.0,
+        "read_noise_sigma": 0.026000000000000002,
+        "edge_gain": 0.18
+      }
+    },
+    {
+      "index": 30,
+      "seed": 1030,
+      "is_array_core": false,
+      "placement_offset_nm": 2895.21589349767,
+      "ground_truth": {
+        "center_x": 781.5372161504641,
+        "center_y": 567.5244150056997
+      },
+      "prediction": {
+        "center_x": 781.455406432082,
+        "center_y": 567.6762598841741,
+        "confidence": 0.723583625125885
+      },
+      "error_px": 0.1724810051590669,
+      "hit": true,
+      "time_ms": 43.576399999437854,
+      "reference_noise": {
+        "peak_electrons": 1600.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 660.0,
+        "read_noise_sigma": 0.02,
+        "edge_gain": 0.12
+      }
+    },
+    {
+      "index": 31,
+      "seed": 1031,
+      "is_array_core": false,
+      "placement_offset_nm": 2168.2839859835644,
+      "ground_truth": {
+        "center_x": 645.9392042055363,
+        "center_y": 660.3630353746852
+      },
+      "prediction": {
+        "center_x": 646.2533143785153,
+        "center_y": 660.2224722605067,
+        "confidence": 0.6280610330581665
+      },
+      "error_px": 0.3441267060784959,
+      "hit": true,
+      "time_ms": 52.05919999934849,
+      "reference_noise": {
+        "peak_electrons": 1825.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 380.0,
+        "read_noise_sigma": 0.05,
+        "edge_gain": 0.16
+      }
+    },
+    {
+      "index": 32,
+      "seed": 1032,
+      "is_array_core": false,
+      "placement_offset_nm": 4863.725073341418,
+      "ground_truth": {
+        "center_x": 946.8424809392214,
+        "center_y": 692.06773054988
+      },
+      "prediction": {
+        "center_x": 946.6386694431848,
+        "center_y": 692.1000758543913,
+        "confidence": 0.6410656358718873
+      },
+      "error_px": 0.20636216862748222,
+      "hit": true,
+      "time_ms": 37.09700000035809,
+      "reference_noise": {
+        "peak_electrons": 2050.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 590.0,
+        "read_noise_sigma": 0.044,
+        "edge_gain": 0.2
+      }
+    },
+    {
+      "index": 33,
+      "seed": 1033,
+      "is_array_core": false,
+      "placement_offset_nm": 3951.3095812011147,
+      "ground_truth": {
+        "center_x": 878.5955740770981,
+        "center_y": 613.1099701801295
+      },
+      "prediction": {
+        "center_x": 878.8003977819948,
+        "center_y": 613.0064008634104,
+        "confidence": 0.7153433506011962
+      },
+      "error_px": 0.22951983237456347,
+      "hit": true,
+      "time_ms": 32.44339999946533,
+      "reference_noise": {
+        "peak_electrons": 2275.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 310.0,
+        "read_noise_sigma": 0.038,
+        "edge_gain": 0.13999999999999999
+      }
+    },
+    {
+      "index": 34,
+      "seed": 1034,
+      "is_array_core": false,
+      "placement_offset_nm": 5365.7731926333,
+      "ground_truth": {
+        "center_x": 119.81849658779194,
+        "center_y": 878.651877073196
+      },
+      "prediction": {
+        "center_x": 119.30607381666174,
+        "center_y": 878.3559432534497,
+        "confidence": 0.6975688663482666
+      },
+      "error_px": 0.5917380518797208,
+      "hit": true,
+      "time_ms": 41.32530000060797,
+      "reference_noise": {
+        "peak_electrons": 2500.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 520.0,
+        "read_noise_sigma": 0.032,
+        "edge_gain": 0.18
+      }
+    },
+    {
+      "index": 35,
+      "seed": 1035,
+      "is_array_core": false,
+      "placement_offset_nm": 4765.745108329826,
+      "ground_truth": {
+        "center_x": 760.4567462977296,
+        "center_y": 899.1059354152688
+      },
+      "prediction": {
+        "center_x": 760.4817584510208,
+        "center_y": 898.9909542486153,
+        "confidence": 0.6677992639541626
+      },
+      "error_px": 0.11767020224884041,
+      "hit": true,
+      "time_ms": 41.473400000541005,
+      "reference_noise": {
+        "peak_electrons": 1600.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 240.0,
+        "read_noise_sigma": 0.026000000000000002,
+        "edge_gain": 0.12
+      }
+    },
+    {
+      "index": 36,
+      "seed": 1036,
+      "is_array_core": true,
+      "placement_offset_nm": 4129.045088743678,
+      "ground_truth": {
+        "center_x": 496.6,
+        "center_y": 87.10948975692972
+      },
+      "prediction": {
+        "center_x": 484.23664153868174,
+        "center_y": 86.91815815229675,
+        "confidence": 0.17862875690460206
+      },
+      "error_px": 12.364838867772674,
+      "hit": false,
+      "time_ms": 33.48060000280384,
+      "reference_noise": {
+        "peak_electrons": 1825.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 450.0,
+        "read_noise_sigma": 0.02,
+        "edge_gain": 0.16
+      }
+    },
+    {
+      "index": 37,
+      "seed": 1037,
+      "is_array_core": false,
+      "placement_offset_nm": 1062.5836875426605,
+      "ground_truth": {
+        "center_x": 598.1276488125204,
+        "center_y": 459.2347517014278
+      },
+      "prediction": {
+        "center_x": 597.9030281079547,
+        "center_y": 459.15885806933625,
+        "confidence": 0.5761892811775208
+      },
+      "error_px": 0.2370955594515622,
+      "hit": true,
+      "time_ms": 31.50169999935315,
+      "reference_noise": {
+        "peak_electrons": 2050.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 660.0,
+        "read_noise_sigma": 0.05,
+        "edge_gain": 0.2
+      }
+    },
+    {
+      "index": 38,
+      "seed": 1038,
+      "is_array_core": false,
+      "placement_offset_nm": 1427.6969637809684,
+      "ground_truth": {
+        "center_x": 404.35544239222514,
+        "center_y": 394.0032792775786
+      },
+      "prediction": {
+        "center_x": 404.68418440370544,
+        "center_y": 393.9788597675905,
+        "confidence": 0.6710592332839966
+      },
+      "error_px": 0.3296477249734526,
+      "hit": true,
+      "time_ms": 32.85210000103689,
+      "reference_noise": {
+        "peak_electrons": 2275.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 380.0,
+        "read_noise_sigma": 0.044,
+        "edge_gain": 0.13999999999999999
+      }
+    },
+    {
+      "index": 39,
+      "seed": 1039,
+      "is_array_core": false,
+      "placement_offset_nm": 2405.966548133792,
+      "ground_truth": {
+        "center_x": 548.5049758136561,
+        "center_y": 735.6565671240778
+      },
+      "prediction": {
+        "center_x": 548.0747670830307,
+        "center_y": 735.8743302833926,
+        "confidence": 0.7967910102844238
+      },
+      "error_px": 0.4821828962759699,
+      "hit": true,
+      "time_ms": 33.145900000818074,
+      "reference_noise": {
+        "peak_electrons": 2500.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 590.0,
+        "read_noise_sigma": 0.038,
+        "edge_gain": 0.18
+      }
+    },
+    {
+      "index": 40,
+      "seed": 1040,
+      "is_array_core": false,
+      "placement_offset_nm": 2514.42449164693,
+      "ground_truth": {
+        "center_x": 690.4968386317211,
+        "center_y": 664.1166040145215
+      },
+      "prediction": {
+        "center_x": 690.354315887457,
+        "center_y": 664.0230277998778,
+        "confidence": 0.654161772441864
+      },
+      "error_px": 0.17049703979717512,
+      "hit": true,
+      "time_ms": 46.00180000124965,
+      "reference_noise": {
+        "peak_electrons": 1600.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 310.0,
+        "read_noise_sigma": 0.032,
+        "edge_gain": 0.12
+      }
+    },
+    {
+      "index": 41,
+      "seed": 1041,
+      "is_array_core": false,
+      "placement_offset_nm": 3492.191502191775,
+      "ground_truth": {
+        "center_x": 845.4696696845043,
+        "center_y": 448.9635208122276
+      },
+      "prediction": {
+        "center_x": 845.6498788823014,
+        "center_y": 448.98166461107706,
+        "confidence": 0.6360616756439209
+      },
+      "error_px": 0.18112027055902097,
+      "hit": true,
+      "time_ms": 30.524500001774868,
+      "reference_noise": {
+        "peak_electrons": 1825.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 520.0,
+        "read_noise_sigma": 0.026000000000000002,
+        "edge_gain": 0.16
+      }
+    },
+    {
+      "index": 42,
+      "seed": 1042,
+      "is_array_core": false,
+      "placement_offset_nm": 2326.6516184574907,
+      "ground_truth": {
+        "center_x": 568.403296107758,
+        "center_y": 722.3827030555726
+      },
+      "prediction": {
+        "center_x": 568.2479996309312,
+        "center_y": 722.1895652216622,
+        "confidence": 0.6962292249679566
+      },
+      "error_px": 0.24782901081682215,
+      "hit": true,
+      "time_ms": 33.91959999862593,
+      "reference_noise": {
+        "peak_electrons": 2050.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 240.0,
+        "read_noise_sigma": 0.02,
+        "edge_gain": 0.2
+      }
+    },
+    {
+      "index": 43,
+      "seed": 1043,
+      "is_array_core": false,
+      "placement_offset_nm": 3417.955294392919,
+      "ground_truth": {
+        "center_x": 408.3933530432389,
+        "center_y": 829.2907623636369
+      },
+      "prediction": {
+        "center_x": 408.20204852878624,
+        "center_y": 829.6308122481078,
+        "confidence": 0.5656286954879761
+      },
+      "error_px": 0.39016834979100257,
+      "hit": true,
+      "time_ms": 39.0077999982168,
+      "reference_noise": {
+        "peak_electrons": 2275.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 450.0,
+        "read_noise_sigma": 0.05,
+        "edge_gain": 0.13999999999999999
+      }
+    },
+    {
+      "index": 44,
+      "seed": 1044,
+      "is_array_core": false,
+      "placement_offset_nm": 5686.029849141377,
+      "ground_truth": {
+        "center_x": 78.85402943918686,
+        "center_y": 882.0280433864218
+      },
+      "prediction": {
+        "center_x": 79.12506069460721,
+        "center_y": 881.9638075795013,
+        "confidence": 0.6441515008926392
+      },
+      "error_px": 0.27853936939947355,
+      "hit": true,
+      "time_ms": 38.9971999975387,
+      "reference_noise": {
+        "peak_electrons": 2500.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 660.0,
+        "read_noise_sigma": 0.044,
+        "edge_gain": 0.18
+      }
+    },
+    {
+      "index": 45,
+      "seed": 1045,
+      "is_array_core": true,
+      "placement_offset_nm": 2042.7106583930245,
+      "ground_truth": {
+        "center_x": 697.2,
+        "center_y": 553.2806563315864
+      },
+      "prediction": {
+        "center_x": 625.026800695306,
+        "center_y": 575.3071218327879,
+        "confidence": 0.018943789768218994
+      },
+      "error_px": 75.45949827788887,
+      "hit": false,
+      "time_ms": 32.91030000036699,
+      "reference_noise": {
+        "peak_electrons": 1600.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 380.0,
+        "read_noise_sigma": 0.038,
+        "edge_gain": 0.12
+      }
+    },
+    {
+      "index": 46,
+      "seed": 1046,
+      "is_array_core": false,
+      "placement_offset_nm": 1423.2760893766767,
+      "ground_truth": {
+        "center_x": 639.4737786214762,
+        "center_y": 471.64134447895833
+      },
+      "prediction": {
+        "center_x": 639.6913652989087,
+        "center_y": 471.76374571009757,
+        "confidence": 0.7672657243728638
+      },
+      "error_px": 0.24965180468112647,
+      "hit": true,
+      "time_ms": 72.62919999993755,
+      "reference_noise": {
+        "peak_electrons": 1825.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 590.0,
+        "read_noise_sigma": 0.032,
+        "edge_gain": 0.16
+      }
+    },
+    {
+      "index": 47,
+      "seed": 1047,
+      "is_array_core": false,
+      "placement_offset_nm": 1665.6812032933376,
+      "ground_truth": {
+        "center_x": 346.2964166794451,
+        "center_y": 564.1883726578938
+      },
+      "prediction": {
+        "center_x": 346.04828181962813,
+        "center_y": 564.0839095108859,
+        "confidence": 0.7392209003448487
+      },
+      "error_px": 0.2692275203971047,
+      "hit": true,
+      "time_ms": 33.699899999191985,
+      "reference_noise": {
+        "peak_electrons": 2050.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 310.0,
+        "read_noise_sigma": 0.026000000000000002,
+        "edge_gain": 0.2
+      }
+    },
+    {
+      "index": 48,
+      "seed": 1048,
+      "is_array_core": false,
+      "placement_offset_nm": 4713.797195061732,
+      "ground_truth": {
+        "center_x": 897.3594867611637,
+        "center_y": 246.41711760723464
+      },
+      "prediction": {
+        "center_x": 897.4410539292818,
+        "center_y": 246.2789640516561,
+        "confidence": 0.7378096817016602
+      },
+      "error_px": 0.16043568129878497,
+      "hit": true,
+      "time_ms": 34.99230000306852,
+      "reference_noise": {
+        "peak_electrons": 2275.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 520.0,
+        "read_noise_sigma": 0.02,
+        "edge_gain": 0.13999999999999999
+      }
+    },
+    {
+      "index": 49,
+      "seed": 1049,
+      "is_array_core": false,
+      "placement_offset_nm": 3243.116691298457,
+      "ground_truth": {
+        "center_x": 749.9365276624603,
+        "center_y": 706.6634725195014
+      },
+      "prediction": {
+        "center_x": 749.7737831181005,
+        "center_y": 706.7587385948075,
+        "confidence": 0.5717559160232544
+      },
+      "error_px": 0.18857733645143135,
+      "hit": true,
+      "time_ms": 34.87490000043181,
+      "reference_noise": {
+        "peak_electrons": 2500.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 240.0,
+        "read_noise_sigma": 0.05,
+        "edge_gain": 0.18
+      }
+    },
+    {
+      "index": 50,
+      "seed": 1050,
+      "is_array_core": false,
+      "placement_offset_nm": 5819.241734678322,
+      "ground_truth": {
+        "center_x": 946.4305093699068,
+        "center_y": 126.72323408770096
+      },
+      "prediction": {
+        "center_x": 946.0912719604252,
+        "center_y": 126.81545576751107,
+        "confidence": 0.6063821069717408
+      },
+      "error_px": 0.3515492258827823,
+      "hit": true,
+      "time_ms": 39.61609999896609,
+      "reference_noise": {
+        "peak_electrons": 1600.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 450.0,
+        "read_noise_sigma": 0.044,
+        "edge_gain": 0.12
+      }
+    },
+    {
+      "index": 51,
+      "seed": 1051,
+      "is_array_core": false,
+      "placement_offset_nm": 3922.7936351587637,
+      "ground_truth": {
+        "center_x": 225.36457307530907,
+        "center_y": 219.89558854185495
+      },
+      "prediction": {
+        "center_x": 225.25787823284156,
+        "center_y": 219.8983178265026,
+        "confidence": 0.7101317558288575
+      },
+      "error_px": 0.10672974470059181,
+      "hit": true,
+      "time_ms": 33.80309999920428,
+      "reference_noise": {
+        "peak_electrons": 1825.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 660.0,
+        "read_noise_sigma": 0.038,
+        "edge_gain": 0.16
+      }
+    },
+    {
+      "index": 52,
+      "seed": 1052,
+      "is_array_core": false,
+      "placement_offset_nm": 3972.0693325333928,
+      "ground_truth": {
+        "center_x": 424.729045822399,
+        "center_y": 890.0097835717922
+      },
+      "prediction": {
+        "center_x": 423.72028125556767,
+        "center_y": 890.0223482806161,
+        "confidence": 0.5341112257003784
+      },
+      "error_px": 1.0088428139220578,
+      "hit": false,
+      "time_ms": 17.96990000002552,
+      "reference_noise": {
+        "peak_electrons": 2050.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 380.0,
+        "read_noise_sigma": 0.032,
+        "edge_gain": 0.2
+      }
+    },
+    {
+      "index": 53,
+      "seed": 1053,
+      "is_array_core": false,
+      "placement_offset_nm": 4396.001389027062,
+      "ground_truth": {
+        "center_x": 795.5516397824618,
+        "center_y": 174.58102337881928
+      },
+      "prediction": {
+        "center_x": 795.455309042636,
+        "center_y": 174.74492226713707,
+        "confidence": 0.7203735740661621
+      },
+      "error_px": 0.19011169618725768,
+      "hit": true,
+      "time_ms": 54.85419999968144,
+      "reference_noise": {
+        "peak_electrons": 2275.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 590.0,
+        "read_noise_sigma": 0.026000000000000002,
+        "edge_gain": 0.13999999999999999
+      }
+    },
+    {
+      "index": 54,
+      "seed": 1054,
+      "is_array_core": true,
+      "placement_offset_nm": 2097.0055157260863,
+      "ground_truth": {
+        "center_x": 483.0,
+        "center_y": 709.0103378540313
+      },
+      "prediction": {
+        "center_x": 378.70433264254746,
+        "center_y": 709.4464542765231,
+        "confidence": 0.04107413549423218
+      },
+      "error_px": 104.29657917242713,
+      "hit": false,
+      "time_ms": 41.78020000108518,
+      "reference_noise": {
+        "peak_electrons": 2500.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 310.0,
+        "read_noise_sigma": 0.02,
+        "edge_gain": 0.18
+      }
+    },
+    {
+      "index": 55,
+      "seed": 1055,
+      "is_array_core": false,
+      "placement_offset_nm": 1165.4415931784438,
+      "ground_truth": {
+        "center_x": 575.0212988936132,
+        "center_y": 410.8128608855613
+      },
+      "prediction": {
+        "center_x": 574.9899798557905,
+        "center_y": 410.88863516193817,
+        "confidence": 0.6713179520606994
+      },
+      "error_px": 0.0819916037810112,
+      "hit": true,
+      "time_ms": 60.725299998011906,
+      "reference_noise": {
+        "peak_electrons": 1600.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 520.0,
+        "read_noise_sigma": 0.05,
+        "edge_gain": 0.12
+      }
+    },
+    {
+      "index": 56,
+      "seed": 1056,
+      "is_array_core": false,
+      "placement_offset_nm": 840.7801928279191,
+      "ground_truth": {
+        "center_x": 464.5135282354812,
+        "center_y": 576.2221991825448
+      },
+      "prediction": {
+        "center_x": 464.3984393722066,
+        "center_y": 576.0734242506176,
+        "confidence": 0.6495238118171692
+      },
+      "error_px": 0.18809419666700036,
+      "hit": true,
+      "time_ms": 53.13250000108383,
+      "reference_noise": {
+        "peak_electrons": 1825.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 240.0,
+        "read_noise_sigma": 0.044,
+        "edge_gain": 0.16
+      }
+    },
+    {
+      "index": 57,
+      "seed": 1057,
+      "is_array_core": false,
+      "placement_offset_nm": 3327.7318833219783,
+      "ground_truth": {
+        "center_x": 344.1877221557693,
+        "center_y": 205.95828706496653
+      },
+      "prediction": {
+        "center_x": 344.3737318249374,
+        "center_y": 205.99883035291597,
+        "confidence": 0.6715208057403564
+      },
+      "error_px": 0.19037687680437623,
+      "hit": true,
+      "time_ms": 33.80710000055842,
+      "reference_noise": {
+        "peak_electrons": 2050.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 450.0,
+        "read_noise_sigma": 0.038,
+        "edge_gain": 0.2
+      }
+    },
+    {
+      "index": 58,
+      "seed": 1058,
+      "is_array_core": false,
+      "placement_offset_nm": 2619.07952591125,
+      "ground_truth": {
+        "center_x": 477.3883667807751,
+        "center_y": 760.930047471797
+      },
+      "prediction": {
+        "center_x": 477.3966159780426,
+        "center_y": 761.0094140620488,
+        "confidence": 0.7343692001342773
+      },
+      "error_px": 0.07979414078583646,
+      "hit": true,
+      "time_ms": 54.7474000013608,
+      "reference_noise": {
+        "peak_electrons": 2275.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 660.0,
+        "read_noise_sigma": 0.032,
+        "edge_gain": 0.13999999999999999
+      }
+    },
+    {
+      "index": 59,
+      "seed": 1059,
+      "is_array_core": false,
+      "placement_offset_nm": 1781.7719075472978,
+      "ground_truth": {
+        "center_x": 439.590043192912,
+        "center_y": 332.3761698808516
+      },
+      "prediction": {
+        "center_x": 439.3408509692636,
+        "center_y": 332.27415466457205,
+        "confidence": 0.6616328023910523
+      },
+      "error_px": 0.2692654242181586,
+      "hit": true,
+      "time_ms": 42.10189999866998,
+      "reference_noise": {
+        "peak_electrons": 2500.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 380.0,
+        "read_noise_sigma": 0.026000000000000002,
+        "edge_gain": 0.18
+      }
+    },
+    {
+      "index": 60,
+      "seed": 1060,
+      "is_array_core": false,
+      "placement_offset_nm": 3858.670610036384,
+      "ground_truth": {
+        "center_x": 882.5582207295935,
+        "center_y": 449.5758339702749
+      },
+      "prediction": {
+        "center_x": 882.4455132814073,
+        "center_y": 449.6936378391224,
+        "confidence": 0.6873448844909668
+      },
+      "error_px": 0.16303594815889016,
+      "hit": true,
+      "time_ms": 58.73459999929764,
+      "reference_noise": {
+        "peak_electrons": 1600.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 590.0,
+        "read_noise_sigma": 0.02,
+        "edge_gain": 0.12
+      }
+    },
+    {
+      "index": 61,
+      "seed": 1061,
+      "is_array_core": false,
+      "placement_offset_nm": 2901.100239945172,
+      "ground_truth": {
+        "center_x": 317.8104613383841,
+        "center_y": 274.23286770575555
+      },
+      "prediction": {
+        "center_x": 318.01521911726195,
+        "center_y": 274.0634629077411,
+        "confidence": 0.6259791526794434
+      },
+      "error_px": 0.2657512626523525,
+      "hit": true,
+      "time_ms": 43.41270000077202,
+      "reference_noise": {
+        "peak_electrons": 1825.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 310.0,
+        "read_noise_sigma": 0.05,
+        "edge_gain": 0.16
+      }
+    },
+    {
+      "index": 62,
+      "seed": 1062,
+      "is_array_core": false,
+      "placement_offset_nm": 2711.970872897125,
+      "ground_truth": {
+        "center_x": 737.8583793976799,
+        "center_y": 369.7262439908432
+      },
+      "prediction": {
+        "center_x": 737.7918246887762,
+        "center_y": 369.7285878783555,
+        "confidence": 0.6136084873199463
+      },
+      "error_px": 0.06659596899158099,
+      "hit": true,
+      "time_ms": 18.382499998551793,
+      "reference_noise": {
+        "peak_electrons": 2050.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 520.0,
+        "read_noise_sigma": 0.044,
+        "edge_gain": 0.2
+      }
+    },
+    {
+      "index": 63,
+      "seed": 1063,
+      "is_array_core": true,
+      "placement_offset_nm": 4456.23331897105,
+      "ground_truth": {
+        "center_x": 319.8,
+        "center_y": 907.5636317571496
+      },
+      "prediction": {
+        "center_x": 390.9203729590171,
+        "center_y": 908.2650391473951,
+        "confidence": 0.15149578866958618
+      },
+      "error_px": 71.12383160486206,
+      "hit": false,
+      "time_ms": 18.017300000792602,
+      "reference_noise": {
+        "peak_electrons": 2275.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 240.0,
+        "read_noise_sigma": 0.038,
+        "edge_gain": 0.13999999999999999
+      }
+    },
+    {
+      "index": 64,
+      "seed": 1064,
+      "is_array_core": false,
+      "placement_offset_nm": 5090.986468119243,
+      "ground_truth": {
+        "center_x": 178.35534609446964,
+        "center_y": 105.37847397826351
+      },
+      "prediction": {
+        "center_x": 178.27244172924026,
+        "center_y": 105.21500965387865,
+        "confidence": 0.7069444227218628
+      },
+      "error_px": 0.1832858944946009,
+      "hit": true,
+      "time_ms": 17.562200002430473,
+      "reference_noise": {
+        "peak_electrons": 2500.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 450.0,
+        "read_noise_sigma": 0.032,
+        "edge_gain": 0.18
+      }
+    },
+    {
+      "index": 65,
+      "seed": 1065,
+      "is_array_core": false,
+      "placement_offset_nm": 3613.195253215843,
+      "ground_truth": {
+        "center_x": 811.2366990617453,
+        "center_y": 683.5306964400331
+      },
+      "prediction": {
+        "center_x": 811.056240502113,
+        "center_y": 683.7416536495855,
+        "confidence": 0.6538821382284165
+      },
+      "error_px": 0.2776116640320933,
+      "hit": true,
+      "time_ms": 16.845699999976205,
+      "reference_noise": {
+        "peak_electrons": 1600.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 660.0,
+        "read_noise_sigma": 0.026000000000000002,
+        "edge_gain": 0.12
+      }
+    },
+    {
+      "index": 66,
+      "seed": 1066,
+      "is_array_core": false,
+      "placement_offset_nm": 4432.487408134475,
+      "ground_truth": {
+        "center_x": 74.16825873403415,
+        "center_y": 376.9684009568993
+      },
+      "prediction": {
+        "center_x": 73.86327710976948,
+        "center_y": 376.9445052262525,
+        "confidence": 0.6946786506652832
+      },
+      "error_px": 0.3059163236609994,
+      "hit": true,
+      "time_ms": 33.12060000098427,
+      "reference_noise": {
+        "peak_electrons": 1825.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 380.0,
+        "read_noise_sigma": 0.02,
+        "edge_gain": 0.16
+      }
+    },
+    {
+      "index": 67,
+      "seed": 1067,
+      "is_array_core": false,
+      "placement_offset_nm": 4502.698364869666,
+      "ground_truth": {
+        "center_x": 54.554891494208015,
+        "center_y": 565.7387325574717
+      },
+      "prediction": {
+        "center_x": 54.720853393207875,
+        "center_y": 565.3499549294061,
+        "confidence": 0.5659685195922851
+      },
+      "error_px": 0.4227190509120767,
+      "hit": true,
+      "time_ms": 43.6760000011418,
+      "reference_noise": {
+        "peak_electrons": 2050.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 590.0,
+        "read_noise_sigma": 0.05,
+        "edge_gain": 0.2
+      }
+    },
+    {
+      "index": 68,
+      "seed": 1068,
+      "is_array_core": false,
+      "placement_offset_nm": 2988.7723913225022,
+      "ground_truth": {
+        "center_x": 201.44354155327017,
+        "center_y": 513.8435974754533
+      },
+      "prediction": {
+        "center_x": 201.1846931677418,
+        "center_y": 513.9343383528233,
+        "confidence": 0.6186206090927124
+      },
+      "error_px": 0.27429253273923837,
+      "hit": true,
+      "time_ms": 50.88700000123936,
+      "reference_noise": {
+        "peak_electrons": 2275.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 310.0,
+        "read_noise_sigma": 0.044,
+        "edge_gain": 0.13999999999999999
+      }
+    },
+    {
+      "index": 69,
+      "seed": 1069,
+      "is_array_core": false,
+      "placement_offset_nm": 3816.9233689945877,
+      "ground_truth": {
+        "center_x": 192.54743495560425,
+        "center_y": 273.8099023047394
+      },
+      "prediction": {
+        "center_x": 192.4889027364108,
+        "center_y": 273.86558443398155,
+        "confidence": 0.6665032550811768
+      },
+      "error_px": 0.08078688136478239,
+      "hit": true,
+      "time_ms": 49.41270000199438,
+      "reference_noise": {
+        "peak_electrons": 2500.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 520.0,
+        "read_noise_sigma": 0.038,
+        "edge_gain": 0.18
+      }
+    },
+    {
+      "index": 70,
+      "seed": 1070,
+      "is_array_core": false,
+      "placement_offset_nm": 3831.0345636606253,
+      "ground_truth": {
+        "center_x": 137.63791292223078,
+        "center_y": 624.3461946674155
+      },
+      "prediction": {
+        "center_x": 137.71908435782774,
+        "center_y": 624.256084263415,
+        "confidence": 0.6800795729637146
+      },
+      "error_px": 0.12127937527049423,
+      "hit": true,
+      "time_ms": 30.975099998613587,
+      "reference_noise": {
+        "peak_electrons": 1600.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 240.0,
+        "read_noise_sigma": 0.032,
+        "edge_gain": 0.12
+      }
+    },
+    {
+      "index": 71,
+      "seed": 1071,
+      "is_array_core": false,
+      "placement_offset_nm": 4726.821300503888,
+      "ground_truth": {
+        "center_x": 259.2343086747738,
+        "center_y": 906.7680886569872
+      },
+      "prediction": {
+        "center_x": 259.0631385034575,
+        "center_y": 906.8125274887101,
+        "confidence": 0.5781887151718139
+      },
+      "error_px": 0.1768446700167996,
+      "hit": true,
+      "time_ms": 56.07790000067325,
+      "reference_noise": {
+        "peak_electrons": 1825.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 450.0,
+        "read_noise_sigma": 0.026000000000000002,
+        "edge_gain": 0.16
+      }
+    },
+    {
+      "index": 72,
+      "seed": 1072,
+      "is_array_core": true,
+      "placement_offset_nm": 3514.071777627105,
+      "ground_truth": {
+        "center_x": 846.8,
+        "center_y": 443.283471693401
+      },
+      "prediction": {
+        "center_x": 757.4913583778059,
+        "center_y": 443.6373160879742,
+        "confidence": 0.1792117856025696
+      },
+      "error_px": 89.30934259223422,
+      "hit": false,
+      "time_ms": 42.66970000026049,
+      "reference_noise": {
+        "peak_electrons": 2050.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 660.0,
+        "read_noise_sigma": 0.02,
+        "edge_gain": 0.2
+      }
+    },
+    {
+      "index": 73,
+      "seed": 1073,
+      "is_array_core": false,
+      "placement_offset_nm": 1208.6895153378468,
+      "ground_truth": {
+        "center_x": 590.0362723882655,
+        "center_y": 580.6397736808732
+      },
+      "prediction": {
+        "center_x": 590.0042334990409,
+        "center_y": 580.7487474821843,
+        "confidence": 0.6091936625957489
+      },
+      "error_px": 0.1135860017561036,
+      "hit": true,
+      "time_ms": 58.141000001342036,
+      "reference_noise": {
+        "peak_electrons": 2275.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 380.0,
+        "read_noise_sigma": 0.05,
+        "edge_gain": 0.13999999999999999
+      }
+    },
+    {
+      "index": 74,
+      "seed": 1074,
+      "is_array_core": false,
+      "placement_offset_nm": 5324.099190767814,
+      "ground_truth": {
+        "center_x": 938.8457774996283,
+        "center_y": 801.4543174381346
+      },
+      "prediction": {
+        "center_x": 938.9077453570395,
+        "center_y": 801.1980136037663,
+        "confidence": 0.47977700176239013
+      },
+      "error_px": 0.2636885869051234,
+      "hit": true,
+      "time_ms": 43.72670000157086,
+      "reference_noise": {
+        "peak_electrons": 2500.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 590.0,
+        "read_noise_sigma": 0.044,
+        "edge_gain": 0.18
+      }
+    },
+    {
+      "index": 75,
+      "seed": 1075,
+      "is_array_core": false,
+      "placement_offset_nm": 3970.0952438258737,
+      "ground_truth": {
+        "center_x": 167.43151155581674,
+        "center_y": 283.17112059405144
+      },
+      "prediction": {
+        "center_x": 167.28328312071218,
+        "center_y": 282.97409657388766,
+        "confidence": 0.6878256810426712
+      },
+      "error_px": 0.24655655232632445,
+      "hit": true,
+      "time_ms": 58.31450000187033,
+      "reference_noise": {
+        "peak_electrons": 1600.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 310.0,
+        "read_noise_sigma": 0.038,
+        "edge_gain": 0.12
+      }
+    },
+    {
+      "index": 76,
+      "seed": 1076,
+      "is_array_core": false,
+      "placement_offset_nm": 3086.704849096111,
+      "ground_truth": {
+        "center_x": 808.5086196433598,
+        "center_y": 509.99499175003314
+      },
+      "prediction": {
+        "center_x": 808.6224626633223,
+        "center_y": 509.95622014083415,
+        "confidence": 0.6362478927612305
+      },
+      "error_px": 0.12026417119847152,
+      "hit": true,
+      "time_ms": 42.66070000085165,
+      "reference_noise": {
+        "peak_electrons": 1825.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 520.0,
+        "read_noise_sigma": 0.032,
+        "edge_gain": 0.16
+      }
+    },
+    {
+      "index": 77,
+      "seed": 1077,
+      "is_array_core": false,
+      "placement_offset_nm": 3061.172980916613,
+      "ground_truth": {
+        "center_x": 258.2691455835814,
+        "center_y": 687.8137221132878
+      },
+      "prediction": {
+        "center_x": 258.2713687050075,
+        "center_y": 687.8826411634078,
+        "confidence": 0.6913970917701722
+      },
+      "error_px": 0.06895489640571098,
+      "hit": true,
+      "time_ms": 41.59580000123242,
+      "reference_noise": {
+        "peak_electrons": 2050.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 240.0,
+        "read_noise_sigma": 0.026000000000000002,
+        "edge_gain": 0.2
+      }
+    },
+    {
+      "index": 78,
+      "seed": 1078,
+      "is_array_core": false,
+      "placement_offset_nm": 3618.8823342713195,
+      "ground_truth": {
+        "center_x": 153.78461979998758,
+        "center_y": 394.6529354658081
+      },
+      "prediction": {
+        "center_x": 153.82838390051262,
+        "center_y": 394.7344629562956,
+        "confidence": 0.7254999225616455
+      },
+      "error_px": 0.09253122824187977,
+      "hit": true,
+      "time_ms": 17.79009999881964,
+      "reference_noise": {
+        "peak_electrons": 2275.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 450.0,
+        "read_noise_sigma": 0.02,
+        "edge_gain": 0.13999999999999999
+      }
+    },
+    {
+      "index": 79,
+      "seed": 1079,
+      "is_array_core": false,
+      "placement_offset_nm": 4504.955564855351,
+      "ground_truth": {
+        "center_x": 918.9302760456526,
+        "center_y": 334.3386882053468
+      },
+      "prediction": {
+        "center_x": 919.0728465358026,
+        "center_y": 334.25228036581046,
+        "confidence": 0.6139204323768616
+      },
+      "error_px": 0.16671130554026525,
+      "hit": true,
+      "time_ms": 34.358199998678174,
+      "reference_noise": {
+        "peak_electrons": 2500.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 660.0,
+        "read_noise_sigma": 0.05,
+        "edge_gain": 0.18
+      }
+    },
+    {
+      "index": 80,
+      "seed": 1080,
+      "is_array_core": false,
+      "placement_offset_nm": 574.5367680566659,
+      "ground_truth": {
+        "center_x": 552.6408567803674,
+        "center_y": 476.9811995117286
+      },
+      "prediction": {
+        "center_x": 552.6785399750501,
+        "center_y": 476.9517921442129,
+        "confidence": 0.6801518152236938
+      },
+      "error_px": 0.047799753406253684,
+      "hit": true,
+      "time_ms": 33.854600002086954,
+      "reference_noise": {
+        "peak_electrons": 1600.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 380.0,
+        "read_noise_sigma": 0.044,
+        "edge_gain": 0.12
+      }
+    },
+    {
+      "index": 81,
+      "seed": 1081,
+      "is_array_core": true,
+      "placement_offset_nm": 2808.113172508529,
+      "ground_truth": {
+        "center_x": 350.4,
+        "center_y": 262.3556525053475
+      },
+      "prediction": {
+        "center_x": 381.20870555318703,
+        "center_y": 261.6946571594109,
+        "confidence": 0.10657629175186158
+      },
+      "error_px": 30.81579550669313,
+      "hit": false,
+      "time_ms": 50.546400001621805,
+      "reference_noise": {
+        "peak_electrons": 1825.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 590.0,
+        "read_noise_sigma": 0.038,
+        "edge_gain": 0.16
+      }
+    },
+    {
+      "index": 82,
+      "seed": 1082,
+      "is_array_core": false,
+      "placement_offset_nm": 2759.4514271503344,
+      "ground_truth": {
+        "center_x": 385.3942070167217,
+        "center_y": 751.0203856317135
+      },
+      "prediction": {
+        "center_x": 385.5258823181439,
+        "center_y": 751.0182857005832,
+        "confidence": 0.6251918888092041
+      },
+      "error_px": 0.13169204499657752,
+      "hit": true,
+      "time_ms": 54.040600000007544,
+      "reference_noise": {
+        "peak_electrons": 2050.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 310.0,
+        "read_noise_sigma": 0.032,
+        "edge_gain": 0.2
+      }
+    },
+    {
+      "index": 83,
+      "seed": 1083,
+      "is_array_core": false,
+      "placement_offset_nm": 5459.049033863207,
+      "ground_truth": {
+        "center_x": 99.3019412254715,
+        "center_y": 129.25314669500875
+      },
+      "prediction": {
+        "center_x": 99.1695963333219,
+        "center_y": 129.2403137558579,
+        "confidence": 0.7081139141082764
+      },
+      "error_px": 0.13296561512412156,
+      "hit": true,
+      "time_ms": 53.60799999834853,
+      "reference_noise": {
+        "peak_electrons": 2275.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 520.0,
+        "read_noise_sigma": 0.026000000000000002,
+        "edge_gain": 0.13999999999999999
+      }
+    },
+    {
+      "index": 84,
+      "seed": 1084,
+      "is_array_core": false,
+      "placement_offset_nm": 4514.386033922033,
+      "ground_truth": {
+        "center_x": 671.3018039659576,
+        "center_y": 82.32488152786544
+      },
+      "prediction": {
+        "center_x": 671.0133209513851,
+        "center_y": 82.26343209618571,
+        "confidence": 0.6521576594829559
+      },
+      "error_px": 0.294955051407081,
+      "hit": true,
+      "time_ms": 58.71589999878779,
+      "reference_noise": {
+        "peak_electrons": 2500.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 240.0,
+        "read_noise_sigma": 0.02,
+        "edge_gain": 0.18
+      }
+    },
+    {
+      "index": 85,
+      "seed": 1085,
+      "is_array_core": false,
+      "placement_offset_nm": 1918.5360604503635,
+      "ground_truth": {
+        "center_x": 691.6220878934569,
+        "center_y": 509.42239798757714
+      },
+      "prediction": {
+        "center_x": 691.4678937422581,
+        "center_y": 509.2302068283738,
+        "confidence": 0.6002909583091736
+      },
+      "error_px": 0.24640064516927984,
+      "hit": true,
+      "time_ms": 37.01580000051763,
+      "reference_noise": {
+        "peak_electrons": 1600.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 450.0,
+        "read_noise_sigma": 0.05,
+        "edge_gain": 0.12
+      }
+    },
+    {
+      "index": 86,
+      "seed": 1086,
+      "is_array_core": false,
+      "placement_offset_nm": 5104.39382638729,
+      "ground_truth": {
+        "center_x": 766.3116161826274,
+        "center_y": 935.4612341354896
+      },
+      "prediction": {
+        "center_x": 766.1273428580034,
+        "center_y": 935.2552734005982,
+        "confidence": 0.5745654626846314
+      },
+      "error_px": 0.2763629542557653,
+      "hit": true,
+      "time_ms": 31.021599999803584,
+      "reference_noise": {
+        "peak_electrons": 1825.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 660.0,
+        "read_noise_sigma": 0.044,
+        "edge_gain": 0.16
+      }
+    },
+    {
+      "index": 87,
+      "seed": 1087,
+      "is_array_core": false,
+      "placement_offset_nm": 4129.409310859474,
+      "ground_truth": {
+        "center_x": 432.2285788492424,
+        "center_y": 92.65831659240189
+      },
+      "prediction": {
+        "center_x": 432.25443414171315,
+        "center_y": 92.72896559084869,
+        "confidence": 0.5826646738052368
+      },
+      "error_px": 0.0752314902835456,
+      "hit": true,
+      "time_ms": 49.733899999409914,
+      "reference_noise": {
+        "peak_electrons": 2050.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 380.0,
+        "read_noise_sigma": 0.038,
+        "edge_gain": 0.2
+      }
+    },
+    {
+      "index": 88,
+      "seed": 1088,
+      "is_array_core": false,
+      "placement_offset_nm": 3685.70481318879,
+      "ground_truth": {
+        "center_x": 831.7043780101601,
+        "center_y": 339.32515657850183
+      },
+      "prediction": {
+        "center_x": 831.7232909026927,
+        "center_y": 339.20707249530665,
+        "confidence": 0.699997752571106
+      },
+      "error_px": 0.11958908063865255,
+      "hit": true,
+      "time_ms": 33.50910000153817,
+      "reference_noise": {
+        "peak_electrons": 2275.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 590.0,
+        "read_noise_sigma": 0.032,
+        "edge_gain": 0.13999999999999999
+      }
+    },
+    {
+      "index": 89,
+      "seed": 1089,
+      "is_array_core": false,
+      "placement_offset_nm": 3095.883893053938,
+      "ground_truth": {
+        "center_x": 587.4695892434744,
+        "center_y": 203.02518330625077
+      },
+      "prediction": {
+        "center_x": 587.5841021454468,
+        "center_y": 203.10219965413222,
+        "confidence": 0.6876356922149658
+      },
+      "error_px": 0.1380026179430375,
+      "hit": true,
+      "time_ms": 44.11719999916386,
+      "reference_noise": {
+        "peak_electrons": 2500.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 310.0,
+        "read_noise_sigma": 0.026000000000000002,
+        "edge_gain": 0.18
+      }
+    },
+    {
+      "index": 90,
+      "seed": 1090,
+      "is_array_core": true,
+      "placement_offset_nm": 2242.430994323231,
+      "ground_truth": {
+        "center_x": 350.4,
+        "center_y": 667.047321567916
+      },
+      "prediction": {
+        "center_x": 560.9711599245671,
+        "center_y": 667.0985100991958,
+        "confidence": 0.23124311599731445
+      },
+      "error_px": 210.5711661463729,
+      "hit": false,
+      "time_ms": 44.84519999823533,
+      "reference_noise": {
+        "peak_electrons": 1600.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 520.0,
+        "read_noise_sigma": 0.02,
+        "edge_gain": 0.12
+      }
+    },
+    {
+      "index": 91,
+      "seed": 1091,
+      "is_array_core": false,
+      "placement_offset_nm": 3844.6855312213943,
+      "ground_truth": {
+        "center_x": 533.7477377375458,
+        "center_y": 117.01545914041228
+      },
+      "prediction": {
+        "center_x": 533.5827527683371,
+        "center_y": 117.0511892255631,
+        "confidence": 0.6451785472869873
+      },
+      "error_px": 0.16880959406884152,
+      "hit": true,
+      "time_ms": 66.39820000054897,
+      "reference_noise": {
+        "peak_electrons": 1825.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 240.0,
+        "read_noise_sigma": 0.05,
+        "edge_gain": 0.16
+      }
+    },
+    {
+      "index": 92,
+      "seed": 1092,
+      "is_array_core": false,
+      "placement_offset_nm": 4536.554399850819,
+      "ground_truth": {
+        "center_x": 387.5475102039176,
+        "center_y": 939.4970941504849
+      },
+      "prediction": {
+        "center_x": 388.3413926217605,
+        "center_y": 939.6132928612229,
+        "confidence": 0.5853860939025879
+      },
+      "error_px": 0.8023412202655745,
+      "hit": true,
+      "time_ms": 38.58879999825149,
+      "reference_noise": {
+        "peak_electrons": 2050.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 450.0,
+        "read_noise_sigma": 0.044,
+        "edge_gain": 0.2
+      }
+    },
+    {
+      "index": 93,
+      "seed": 1093,
+      "is_array_core": false,
+      "placement_offset_nm": 2559.3691109395813,
+      "ground_truth": {
+        "center_x": 740.0779065571376,
+        "center_y": 588.6921712636406
+      },
+      "prediction": {
+        "center_x": 740.0147671495467,
+        "center_y": 588.7613625404416,
+        "confidence": 0.6793346272468567
+      },
+      "error_px": 0.0936697260392805,
+      "hit": true,
+      "time_ms": 55.932499999471474,
+      "reference_noise": {
+        "peak_electrons": 2275.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 660.0,
+        "read_noise_sigma": 0.038,
+        "edge_gain": 0.13999999999999999
+      }
+    },
+    {
+      "index": 94,
+      "seed": 1094,
+      "is_array_core": false,
+      "placement_offset_nm": 4435.095967319952,
+      "ground_truth": {
+        "center_x": 204.24933296953915,
+        "center_y": 830.5031094322934
+      },
+      "prediction": {
+        "center_x": 204.17241348570076,
+        "center_y": 830.2079313623781,
+        "confidence": 0.6895480380058289
+      },
+      "error_px": 0.30503557161895173,
+      "hit": true,
+      "time_ms": 47.85910000282456,
+      "reference_noise": {
+        "peak_electrons": 2500.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 380.0,
+        "read_noise_sigma": 0.032,
+        "edge_gain": 0.18
+      }
+    },
+    {
+      "index": 95,
+      "seed": 1095,
+      "is_array_core": false,
+      "placement_offset_nm": 4589.948631486039,
+      "ground_truth": {
+        "center_x": 332.9484918737936,
+        "center_y": 72.48382717192366
+      },
+      "prediction": {
+        "center_x": 333.1000910174435,
+        "center_y": 72.57732159895714,
+        "confidence": 0.6638717359542846
+      },
+      "error_px": 0.17811094363260754,
+      "hit": true,
+      "time_ms": 53.83639999854495,
+      "reference_noise": {
+        "peak_electrons": 1600.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 590.0,
+        "read_noise_sigma": 0.026000000000000002,
+        "edge_gain": 0.12
+      }
+    },
+    {
+      "index": 96,
+      "seed": 1096,
+      "is_array_core": false,
+      "placement_offset_nm": 4864.993124073493,
+      "ground_truth": {
+        "center_x": 268.51894193541534,
+        "center_y": 927.8996386188286
+      },
+      "prediction": {
+        "center_x": 268.28710631290147,
+        "center_y": 927.8777164598488,
+        "confidence": 0.6868890674591065
+      },
+      "error_px": 0.23286978533233868,
+      "hit": true,
+      "time_ms": 62.19599999894854,
+      "reference_noise": {
+        "peak_electrons": 1825.0,
+        "read_noise_sigma": 0.007,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 310.0,
+        "read_noise_sigma": 0.02,
+        "edge_gain": 0.16
+      }
+    },
+    {
+      "index": 97,
+      "seed": 1097,
+      "is_array_core": false,
+      "placement_offset_nm": 4414.152482297888,
+      "ground_truth": {
+        "center_x": 270.32608091474526,
+        "center_y": 123.0420285207037
+      },
+      "prediction": {
+        "center_x": 270.1625016704461,
+        "center_y": 122.9641647458385,
+        "confidence": 0.6665431007385254
+      },
+      "error_px": 0.1811654950638932,
+      "hit": true,
+      "time_ms": 40.81210000003921,
+      "reference_noise": {
+        "peak_electrons": 2050.0,
+        "read_noise_sigma": 0.009333333333333332,
+        "edge_gain": 0.1
+      },
+      "search_noise": {
+        "peak_electrons": 520.0,
+        "read_noise_sigma": 0.05,
+        "edge_gain": 0.2
+      }
+    },
+    {
+      "index": 98,
+      "seed": 1098,
+      "is_array_core": false,
+      "placement_offset_nm": 3738.681478780233,
+      "ground_truth": {
+        "center_x": 872.6995549024916,
+        "center_y": 529.536989914819
+      },
+      "prediction": {
+        "center_x": 872.5653069916959,
+        "center_y": 529.7449260915622,
+        "confidence": 0.6650820095062255
+      },
+      "error_px": 0.2475074850415897,
+      "hit": true,
+      "time_ms": 39.48309999759658,
+      "reference_noise": {
+        "peak_electrons": 2275.0,
+        "read_noise_sigma": 0.011666666666666665,
+        "edge_gain": 0.12
+      },
+      "search_noise": {
+        "peak_electrons": 240.0,
+        "read_noise_sigma": 0.044,
+        "edge_gain": 0.13999999999999999
+      }
+    },
+    {
+      "index": 99,
+      "seed": 1099,
+      "is_array_core": true,
+      "placement_offset_nm": 1541.0987120999687,
+      "ground_truth": {
+        "center_x": 561.2,
+        "center_y": 641.4369555822021
+      },
+      "prediction": {
+        "center_x": 143.48003111652923,
+        "center_y": 641.2283020329846,
+        "confidence": 0.048076431274414064
+      },
+      "error_px": 417.7200209952971,
+      "hit": false,
+      "time_ms": 43.842200000653975,
+      "reference_noise": {
+        "peak_electrons": 2500.0,
+        "read_noise_sigma": 0.014,
+        "edge_gain": 0.08
+      },
+      "search_noise": {
+        "peak_electrons": 450.0,
+        "read_noise_sigma": 0.038,
+        "edge_gain": 0.18
+      }
+    }
+  ]
+}

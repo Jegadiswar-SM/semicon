@@ -17,7 +17,7 @@
     },
     "error_px": 377.5413018846344,
     "hit": false,
-    "time_ms": 35.93409999666619,
+    "time_ms": 38.41979999924661,
     "reference_noise": {
       "peak_electrons": 1600.0,
       "read_noise_sigma": 0.007,
@@ -48,7 +48,7 @@
       },
       "error_px": 377.5413018846344,
       "hit": false,
-      "time_ms": 35.93409999666619,
+      "time_ms": 38.41979999924661,
       "reference_noise": {
         "peak_electrons": 1600.0,
         "read_noise_sigma": 0.007,
@@ -76,7 +76,7 @@
       },
       "error_px": 0.11108828214144435,
       "hit": true,
-      "time_ms": 36.72060000099009,
+      "time_ms": 32.7194999990752,
       "reference_noise": {
         "peak_electrons": 1825.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -104,7 +104,7 @@
       },
       "error_px": 0.35207064044665787,
       "hit": true,
-      "time_ms": 38.25639999922714,
+      "time_ms": 25.07760000298731,
       "reference_noise": {
         "peak_electrons": 2050.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -132,7 +132,7 @@
       },
       "error_px": 0.03752834808516574,
       "hit": true,
-      "time_ms": 39.513499999884516,
+      "time_ms": 40.883300000132294,
       "reference_noise": {
         "peak_electrons": 2275.0,
         "read_noise_sigma": 0.014,
@@ -160,7 +160,7 @@
       },
       "error_px": 0.31399503565544135,
       "hit": true,
-      "time_ms": 32.828499999595806,
+      "time_ms": 34.15509999831556,
       "reference_noise": {
         "peak_electrons": 2500.0,
         "read_noise_sigma": 0.007,
@@ -188,7 +188,7 @@
       },
       "error_px": 0.1198490865969066,
       "hit": true,
-      "time_ms": 31.107999999221647,
+      "time_ms": 46.95219999848632,
       "reference_noise": {
         "peak_electrons": 1600.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -216,7 +216,7 @@
       },
       "error_px": 0.19159075425311597,
       "hit": true,
-      "time_ms": 44.996699998591794,
+      "time_ms": 34.940900000947295,
       "reference_noise": {
         "peak_electrons": 1825.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -244,7 +244,7 @@
       },
       "error_px": 0.4277857476830121,
       "hit": true,
-      "time_ms": 41.34329999942565,
+      "time_ms": 35.30260000115959,
       "reference_noise": {
         "peak_electrons": 2050.0,
         "read_noise_sigma": 0.014,
@@ -272,7 +272,7 @@
       },
       "error_px": 0.31674058583778647,
       "hit": true,
-      "time_ms": 57.1429999981774,
+      "time_ms": 34.636499996850034,
       "reference_noise": {
         "peak_electrons": 2275.0,
         "read_noise_sigma": 0.007,
@@ -300,7 +300,7 @@
       },
       "error_px": 174.82124398717045,
       "hit": false,
-      "time_ms": 38.664400002744514,
+      "time_ms": 22.5298000004841,
       "reference_noise": {
         "peak_electrons": 2500.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -328,7 +328,7 @@
       },
       "error_px": 0.17599392618925286,
       "hit": true,
-      "time_ms": 41.51849999834667,
+      "time_ms": 80.17259999905946,
       "reference_noise": {
         "peak_electrons": 1600.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -356,7 +356,7 @@
       },
       "error_px": 0.3117908540410812,
       "hit": true,
-      "time_ms": 48.92749999999069,
+      "time_ms": 29.38970000104746,
       "reference_noise": {
         "peak_electrons": 1825.0,
         "read_noise_sigma": 0.014,
@@ -384,7 +384,7 @@
       },
       "error_px": 0.060356338160802034,
       "hit": true,
-      "time_ms": 35.06019999986165,
+      "time_ms": 28.609000000869855,
       "reference_noise": {
         "peak_electrons": 2050.0,
         "read_noise_sigma": 0.007,
@@ -412,7 +412,7 @@
       },
       "error_px": 0.03507413207082281,
       "hit": true,
-      "time_ms": 32.70669999983511,
+      "time_ms": 36.1668000005011,
       "reference_noise": {
         "peak_electrons": 2275.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -440,7 +440,7 @@
       },
       "error_px": 0.1727482695596075,
       "hit": true,
-      "time_ms": 27.781199998571537,
+      "time_ms": 26.68689999700291,
       "reference_noise": {
         "peak_electrons": 2500.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -468,7 +468,7 @@
       },
       "error_px": 0.23667588429356248,
       "hit": true,
-      "time_ms": 41.413000002648914,
+      "time_ms": 75.78959999955259,
       "reference_noise": {
         "peak_electrons": 1600.0,
         "read_noise_sigma": 0.014,
@@ -496,7 +496,7 @@
       },
       "error_px": 0.19895430324095095,
       "hit": true,
-      "time_ms": 47.490900000411784,
+      "time_ms": 43.27890000058687,
       "reference_noise": {
         "peak_electrons": 1825.0,
         "read_noise_sigma": 0.007,
@@ -524,7 +524,7 @@
       },
       "error_px": 0.4099523743343472,
       "hit": true,
-      "time_ms": 45.06010000113747,
+      "time_ms": 39.50849999819184,
       "reference_noise": {
         "peak_electrons": 2050.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -552,7 +552,7 @@
       },
       "error_px": 268.11062594129373,
       "hit": false,
-      "time_ms": 46.87959999864688,
+      "time_ms": 19.18449999720906,
       "reference_noise": {
         "peak_electrons": 2275.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -580,7 +580,7 @@
       },
       "error_px": 0.26193284614421564,
       "hit": true,
-      "time_ms": 31.30559999772231,
+      "time_ms": 40.59599999891361,
       "reference_noise": {
         "peak_electrons": 2500.0,
         "read_noise_sigma": 0.014,
@@ -608,7 +608,7 @@
       },
       "error_px": 0.31667585372470214,
       "hit": true,
-      "time_ms": 41.921000000002095,
+      "time_ms": 47.70750000170665,
       "reference_noise": {
         "peak_electrons": 1600.0,
         "read_noise_sigma": 0.007,
@@ -636,7 +636,7 @@
       },
       "error_px": 0.18993822825382228,
       "hit": true,
-      "time_ms": 32.55960000024061,
+      "time_ms": 32.13069999765139,
       "reference_noise": {
         "peak_electrons": 1825.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -664,7 +664,7 @@
       },
       "error_px": 0.34241360236278967,
       "hit": true,
-      "time_ms": 48.26390000016545,
+      "time_ms": 33.06380000140052,
       "reference_noise": {
         "peak_electrons": 2050.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -692,7 +692,7 @@
       },
       "error_px": 0.23376430352413632,
       "hit": true,
-      "time_ms": 41.33700000238605,
+      "time_ms": 30.040900001040427,
       "reference_noise": {
         "peak_electrons": 2275.0,
         "read_noise_sigma": 0.014,
@@ -720,7 +720,7 @@
       },
       "error_px": 0.36104010543526466,
       "hit": true,
-      "time_ms": 31.806800001504598,
+      "time_ms": 38.006400001904694,
       "reference_noise": {
         "peak_electrons": 2500.0,
         "read_noise_sigma": 0.007,
@@ -748,7 +748,7 @@
       },
       "error_px": 0.0221350553859297,
       "hit": true,
-      "time_ms": 17.54829999845242,
+      "time_ms": 43.16380000091158,
       "reference_noise": {
         "peak_electrons": 1600.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -776,7 +776,7 @@
       },
       "error_px": 0.3274518829740781,
       "hit": true,
-      "time_ms": 32.37959999751183,
+      "time_ms": 35.8961999991152,
       "reference_noise": {
         "peak_electrons": 1825.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -804,7 +804,7 @@
       },
       "error_px": 392.8193554500403,
       "hit": false,
-      "time_ms": 32.76249999908032,
+      "time_ms": 32.40150000056019,
       "reference_noise": {
         "peak_electrons": 2050.0,
         "read_noise_sigma": 0.014,
@@ -832,7 +832,7 @@
       },
       "error_px": 0.08165981896784413,
       "hit": true,
-      "time_ms": 41.705999999976484,
+      "time_ms": 18.456400001014117,
       "reference_noise": {
         "peak_electrons": 2275.0,
         "read_noise_sigma": 0.007,
@@ -860,7 +860,7 @@
       },
       "error_px": 0.19321724103969753,
       "hit": true,
-      "time_ms": 35.92990000106511,
+      "time_ms": 19.185100001777755,
       "reference_noise": {
         "peak_electrons": 2500.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -888,7 +888,7 @@
       },
       "error_px": 0.1724810051590669,
       "hit": true,
-      "time_ms": 43.576399999437854,
+      "time_ms": 34.95660000044154,
       "reference_noise": {
         "peak_electrons": 1600.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -916,7 +916,7 @@
       },
       "error_px": 0.3441267060784959,
       "hit": true,
-      "time_ms": 52.05919999934849,
+      "time_ms": 33.64330000113114,
       "reference_noise": {
         "peak_electrons": 1825.0,
         "read_noise_sigma": 0.014,
@@ -944,7 +944,7 @@
       },
       "error_px": 0.20636216862748222,
       "hit": true,
-      "time_ms": 37.09700000035809,
+      "time_ms": 29.010800000833115,
       "reference_noise": {
         "peak_electrons": 2050.0,
         "read_noise_sigma": 0.007,
@@ -972,7 +972,7 @@
       },
       "error_px": 0.22951983237456347,
       "hit": true,
-      "time_ms": 32.44339999946533,
+      "time_ms": 42.48549999829265,
       "reference_noise": {
         "peak_electrons": 2275.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -1000,7 +1000,7 @@
       },
       "error_px": 0.5917380518797208,
       "hit": true,
-      "time_ms": 41.32530000060797,
+      "time_ms": 19.258500000432832,
       "reference_noise": {
         "peak_electrons": 2500.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -1028,7 +1028,7 @@
       },
       "error_px": 0.11767020224884041,
       "hit": true,
-      "time_ms": 41.473400000541005,
+      "time_ms": 62.520700001186924,
       "reference_noise": {
         "peak_electrons": 1600.0,
         "read_noise_sigma": 0.014,
@@ -1056,7 +1056,7 @@
       },
       "error_px": 12.364838867772674,
       "hit": false,
-      "time_ms": 33.48060000280384,
+      "time_ms": 35.79700000045705,
       "reference_noise": {
         "peak_electrons": 1825.0,
         "read_noise_sigma": 0.007,
@@ -1084,7 +1084,7 @@
       },
       "error_px": 0.2370955594515622,
       "hit": true,
-      "time_ms": 31.50169999935315,
+      "time_ms": 34.04690000024857,
       "reference_noise": {
         "peak_electrons": 2050.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -1112,7 +1112,7 @@
       },
       "error_px": 0.3296477249734526,
       "hit": true,
-      "time_ms": 32.85210000103689,
+      "time_ms": 19.124499998724787,
       "reference_noise": {
         "peak_electrons": 2275.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -1140,7 +1140,7 @@
       },
       "error_px": 0.4821828962759699,
       "hit": true,
-      "time_ms": 33.145900000818074,
+      "time_ms": 31.31500000017695,
       "reference_noise": {
         "peak_electrons": 2500.0,
         "read_noise_sigma": 0.014,
@@ -1168,7 +1168,7 @@
       },
       "error_px": 0.17049703979717512,
       "hit": true,
-      "time_ms": 46.00180000124965,
+      "time_ms": 78.22809999925084,
       "reference_noise": {
         "peak_electrons": 1600.0,
         "read_noise_sigma": 0.007,
@@ -1196,7 +1196,7 @@
       },
       "error_px": 0.18112027055902097,
       "hit": true,
-      "time_ms": 30.524500001774868,
+      "time_ms": 35.911200000555255,
       "reference_noise": {
         "peak_electrons": 1825.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -1224,7 +1224,7 @@
       },
       "error_px": 0.24782901081682215,
       "hit": true,
-      "time_ms": 33.91959999862593,
+      "time_ms": 43.34069999822532,
       "reference_noise": {
         "peak_electrons": 2050.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -1252,7 +1252,7 @@
       },
       "error_px": 0.39016834979100257,
       "hit": true,
-      "time_ms": 39.0077999982168,
+      "time_ms": 35.72370000256342,
       "reference_noise": {
         "peak_electrons": 2275.0,
         "read_noise_sigma": 0.014,
@@ -1280,7 +1280,7 @@
       },
       "error_px": 0.27853936939947355,
       "hit": true,
-      "time_ms": 38.9971999975387,
+      "time_ms": 35.478100002364954,
       "reference_noise": {
         "peak_electrons": 2500.0,
         "read_noise_sigma": 0.007,
@@ -1302,13 +1302,13 @@
         "center_y": 553.2806563315864
       },
       "prediction": {
-        "center_x": 625.026800695306,
-        "center_y": 575.3071218327879,
-        "confidence": 0.018943789768218994
+        "center_x": 472.8363366581854,
+        "center_y": 553.5066493169626,
+        "confidence": 0.1392332551956177
       },
-      "error_px": 75.45949827788887,
+      "error_px": 224.3637771588555,
       "hit": false,
-      "time_ms": 32.91030000036699,
+      "time_ms": 39.90629999680095,
       "reference_noise": {
         "peak_electrons": 1600.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -1336,7 +1336,7 @@
       },
       "error_px": 0.24965180468112647,
       "hit": true,
-      "time_ms": 72.62919999993755,
+      "time_ms": 30.157000001054257,
       "reference_noise": {
         "peak_electrons": 1825.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -1364,7 +1364,7 @@
       },
       "error_px": 0.2692275203971047,
       "hit": true,
-      "time_ms": 33.699899999191985,
+      "time_ms": 39.26299999875482,
       "reference_noise": {
         "peak_electrons": 2050.0,
         "read_noise_sigma": 0.014,
@@ -1392,7 +1392,7 @@
       },
       "error_px": 0.16043568129878497,
       "hit": true,
-      "time_ms": 34.99230000306852,
+      "time_ms": 33.649099998001475,
       "reference_noise": {
         "peak_electrons": 2275.0,
         "read_noise_sigma": 0.007,
@@ -1420,7 +1420,7 @@
       },
       "error_px": 0.18857733645143135,
       "hit": true,
-      "time_ms": 34.87490000043181,
+      "time_ms": 34.541699998953845,
       "reference_noise": {
         "peak_electrons": 2500.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -1448,7 +1448,7 @@
       },
       "error_px": 0.3515492258827823,
       "hit": true,
-      "time_ms": 39.61609999896609,
+      "time_ms": 46.45479999817326,
       "reference_noise": {
         "peak_electrons": 1600.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -1476,7 +1476,7 @@
       },
       "error_px": 0.10672974470059181,
       "hit": true,
-      "time_ms": 33.80309999920428,
+      "time_ms": 28.101199997763615,
       "reference_noise": {
         "peak_electrons": 1825.0,
         "read_noise_sigma": 0.014,
@@ -1504,7 +1504,7 @@
       },
       "error_px": 1.0088428139220578,
       "hit": false,
-      "time_ms": 17.96990000002552,
+      "time_ms": 36.03800000200863,
       "reference_noise": {
         "peak_electrons": 2050.0,
         "read_noise_sigma": 0.007,
@@ -1532,7 +1532,7 @@
       },
       "error_px": 0.19011169618725768,
       "hit": true,
-      "time_ms": 54.85419999968144,
+      "time_ms": 33.44139999899198,
       "reference_noise": {
         "peak_electrons": 2275.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -1560,7 +1560,7 @@
       },
       "error_px": 104.29657917242713,
       "hit": false,
-      "time_ms": 41.78020000108518,
+      "time_ms": 18.35639999990235,
       "reference_noise": {
         "peak_electrons": 2500.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -1588,7 +1588,7 @@
       },
       "error_px": 0.0819916037810112,
       "hit": true,
-      "time_ms": 60.725299998011906,
+      "time_ms": 50.74420000164537,
       "reference_noise": {
         "peak_electrons": 1600.0,
         "read_noise_sigma": 0.014,
@@ -1616,7 +1616,7 @@
       },
       "error_px": 0.18809419666700036,
       "hit": true,
-      "time_ms": 53.13250000108383,
+      "time_ms": 20.64740000059828,
       "reference_noise": {
         "peak_electrons": 1825.0,
         "read_noise_sigma": 0.007,
@@ -1644,7 +1644,7 @@
       },
       "error_px": 0.19037687680437623,
       "hit": true,
-      "time_ms": 33.80710000055842,
+      "time_ms": 19.529600001988,
       "reference_noise": {
         "peak_electrons": 2050.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -1672,7 +1672,7 @@
       },
       "error_px": 0.07979414078583646,
       "hit": true,
-      "time_ms": 54.7474000013608,
+      "time_ms": 25.415400003112154,
       "reference_noise": {
         "peak_electrons": 2275.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -1700,7 +1700,7 @@
       },
       "error_px": 0.2692654242181586,
       "hit": true,
-      "time_ms": 42.10189999866998,
+      "time_ms": 33.71289999995497,
       "reference_noise": {
         "peak_electrons": 2500.0,
         "read_noise_sigma": 0.014,
@@ -1728,7 +1728,7 @@
       },
       "error_px": 0.16303594815889016,
       "hit": true,
-      "time_ms": 58.73459999929764,
+      "time_ms": 36.94169999653241,
       "reference_noise": {
         "peak_electrons": 1600.0,
         "read_noise_sigma": 0.007,
@@ -1756,7 +1756,7 @@
       },
       "error_px": 0.2657512626523525,
       "hit": true,
-      "time_ms": 43.41270000077202,
+      "time_ms": 24.709100001928164,
       "reference_noise": {
         "peak_electrons": 1825.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -1784,7 +1784,7 @@
       },
       "error_px": 0.06659596899158099,
       "hit": true,
-      "time_ms": 18.382499998551793,
+      "time_ms": 33.93819999837433,
       "reference_noise": {
         "peak_electrons": 2050.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -1812,7 +1812,7 @@
       },
       "error_px": 71.12383160486206,
       "hit": false,
-      "time_ms": 18.017300000792602,
+      "time_ms": 29.306000000360655,
       "reference_noise": {
         "peak_electrons": 2275.0,
         "read_noise_sigma": 0.014,
@@ -1840,7 +1840,7 @@
       },
       "error_px": 0.1832858944946009,
       "hit": true,
-      "time_ms": 17.562200002430473,
+      "time_ms": 32.034899999416666,
       "reference_noise": {
         "peak_electrons": 2500.0,
         "read_noise_sigma": 0.007,
@@ -1868,7 +1868,7 @@
       },
       "error_px": 0.2776116640320933,
       "hit": true,
-      "time_ms": 16.845699999976205,
+      "time_ms": 79.20200000080513,
       "reference_noise": {
         "peak_electrons": 1600.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -1896,7 +1896,7 @@
       },
       "error_px": 0.3059163236609994,
       "hit": true,
-      "time_ms": 33.12060000098427,
+      "time_ms": 18.297700000402983,
       "reference_noise": {
         "peak_electrons": 1825.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -1924,7 +1924,7 @@
       },
       "error_px": 0.4227190509120767,
       "hit": true,
-      "time_ms": 43.6760000011418,
+      "time_ms": 28.613999998924555,
       "reference_noise": {
         "peak_electrons": 2050.0,
         "read_noise_sigma": 0.014,
@@ -1952,7 +1952,7 @@
       },
       "error_px": 0.27429253273923837,
       "hit": true,
-      "time_ms": 50.88700000123936,
+      "time_ms": 35.381000001507346,
       "reference_noise": {
         "peak_electrons": 2275.0,
         "read_noise_sigma": 0.007,
@@ -1980,7 +1980,7 @@
       },
       "error_px": 0.08078688136478239,
       "hit": true,
-      "time_ms": 49.41270000199438,
+      "time_ms": 47.97740000140038,
       "reference_noise": {
         "peak_electrons": 2500.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -2008,7 +2008,7 @@
       },
       "error_px": 0.12127937527049423,
       "hit": true,
-      "time_ms": 30.975099998613587,
+      "time_ms": 47.09920000095735,
       "reference_noise": {
         "peak_electrons": 1600.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -2036,7 +2036,7 @@
       },
       "error_px": 0.1768446700167996,
       "hit": true,
-      "time_ms": 56.07790000067325,
+      "time_ms": 36.36929999993299,
       "reference_noise": {
         "peak_electrons": 1825.0,
         "read_noise_sigma": 0.014,
@@ -2064,7 +2064,7 @@
       },
       "error_px": 89.30934259223422,
       "hit": false,
-      "time_ms": 42.66970000026049,
+      "time_ms": 22.30559999952675,
       "reference_noise": {
         "peak_electrons": 2050.0,
         "read_noise_sigma": 0.007,
@@ -2092,7 +2092,7 @@
       },
       "error_px": 0.1135860017561036,
       "hit": true,
-      "time_ms": 58.141000001342036,
+      "time_ms": 24.14150000186055,
       "reference_noise": {
         "peak_electrons": 2275.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -2120,7 +2120,7 @@
       },
       "error_px": 0.2636885869051234,
       "hit": true,
-      "time_ms": 43.72670000157086,
+      "time_ms": 68.49839999995311,
       "reference_noise": {
         "peak_electrons": 2500.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -2148,7 +2148,7 @@
       },
       "error_px": 0.24655655232632445,
       "hit": true,
-      "time_ms": 58.31450000187033,
+      "time_ms": 49.57930000091437,
       "reference_noise": {
         "peak_electrons": 1600.0,
         "read_noise_sigma": 0.014,
@@ -2176,7 +2176,7 @@
       },
       "error_px": 0.12026417119847152,
       "hit": true,
-      "time_ms": 42.66070000085165,
+      "time_ms": 26.23690000109491,
       "reference_noise": {
         "peak_electrons": 1825.0,
         "read_noise_sigma": 0.007,
@@ -2204,7 +2204,7 @@
       },
       "error_px": 0.06895489640571098,
       "hit": true,
-      "time_ms": 41.59580000123242,
+      "time_ms": 30.29899999819463,
       "reference_noise": {
         "peak_electrons": 2050.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -2232,7 +2232,7 @@
       },
       "error_px": 0.09253122824187977,
       "hit": true,
-      "time_ms": 17.79009999881964,
+      "time_ms": 20.805900003324496,
       "reference_noise": {
         "peak_electrons": 2275.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -2260,7 +2260,7 @@
       },
       "error_px": 0.16671130554026525,
       "hit": true,
-      "time_ms": 34.358199998678174,
+      "time_ms": 19.817100001091603,
       "reference_noise": {
         "peak_electrons": 2500.0,
         "read_noise_sigma": 0.014,
@@ -2288,7 +2288,7 @@
       },
       "error_px": 0.047799753406253684,
       "hit": true,
-      "time_ms": 33.854600002086954,
+      "time_ms": 40.56530000161729,
       "reference_noise": {
         "peak_electrons": 1600.0,
         "read_noise_sigma": 0.007,
@@ -2316,7 +2316,7 @@
       },
       "error_px": 30.81579550669313,
       "hit": false,
-      "time_ms": 50.546400001621805,
+      "time_ms": 47.669899999164045,
       "reference_noise": {
         "peak_electrons": 1825.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -2344,7 +2344,7 @@
       },
       "error_px": 0.13169204499657752,
       "hit": true,
-      "time_ms": 54.040600000007544,
+      "time_ms": 34.616400000231806,
       "reference_noise": {
         "peak_electrons": 2050.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -2372,7 +2372,7 @@
       },
       "error_px": 0.13296561512412156,
       "hit": true,
-      "time_ms": 53.60799999834853,
+      "time_ms": 33.02129999792669,
       "reference_noise": {
         "peak_electrons": 2275.0,
         "read_noise_sigma": 0.014,
@@ -2400,7 +2400,7 @@
       },
       "error_px": 0.294955051407081,
       "hit": true,
-      "time_ms": 58.71589999878779,
+      "time_ms": 18.387399999483023,
       "reference_noise": {
         "peak_electrons": 2500.0,
         "read_noise_sigma": 0.007,
@@ -2428,7 +2428,7 @@
       },
       "error_px": 0.24640064516927984,
       "hit": true,
-      "time_ms": 37.01580000051763,
+      "time_ms": 39.257200001884485,
       "reference_noise": {
         "peak_electrons": 1600.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -2456,7 +2456,7 @@
       },
       "error_px": 0.2763629542557653,
       "hit": true,
-      "time_ms": 31.021599999803584,
+      "time_ms": 52.75669999900856,
       "reference_noise": {
         "peak_electrons": 1825.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -2484,7 +2484,7 @@
       },
       "error_px": 0.0752314902835456,
       "hit": true,
-      "time_ms": 49.733899999409914,
+      "time_ms": 34.61020000031567,
       "reference_noise": {
         "peak_electrons": 2050.0,
         "read_noise_sigma": 0.014,
@@ -2512,7 +2512,7 @@
       },
       "error_px": 0.11958908063865255,
       "hit": true,
-      "time_ms": 33.50910000153817,
+      "time_ms": 53.375200001028134,
       "reference_noise": {
         "peak_electrons": 2275.0,
         "read_noise_sigma": 0.007,
@@ -2540,7 +2540,7 @@
       },
       "error_px": 0.1380026179430375,
       "hit": true,
-      "time_ms": 44.11719999916386,
+      "time_ms": 36.058699999557575,
       "reference_noise": {
         "peak_electrons": 2500.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -2568,7 +2568,7 @@
       },
       "error_px": 210.5711661463729,
       "hit": false,
-      "time_ms": 44.84519999823533,
+      "time_ms": 39.35079999791924,
       "reference_noise": {
         "peak_electrons": 1600.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -2596,7 +2596,7 @@
       },
       "error_px": 0.16880959406884152,
       "hit": true,
-      "time_ms": 66.39820000054897,
+      "time_ms": 27.72470000127214,
       "reference_noise": {
         "peak_electrons": 1825.0,
         "read_noise_sigma": 0.014,
@@ -2624,7 +2624,7 @@
       },
       "error_px": 0.8023412202655745,
       "hit": true,
-      "time_ms": 38.58879999825149,
+      "time_ms": 19.85919999788166,
       "reference_noise": {
         "peak_electrons": 2050.0,
         "read_noise_sigma": 0.007,
@@ -2652,7 +2652,7 @@
       },
       "error_px": 0.0936697260392805,
       "hit": true,
-      "time_ms": 55.932499999471474,
+      "time_ms": 33.19099999862374,
       "reference_noise": {
         "peak_electrons": 2275.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -2680,7 +2680,7 @@
       },
       "error_px": 0.30503557161895173,
       "hit": true,
-      "time_ms": 47.85910000282456,
+      "time_ms": 51.18410000068252,
       "reference_noise": {
         "peak_electrons": 2500.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -2708,7 +2708,7 @@
       },
       "error_px": 0.17811094363260754,
       "hit": true,
-      "time_ms": 53.83639999854495,
+      "time_ms": 38.22349999973085,
       "reference_noise": {
         "peak_electrons": 1600.0,
         "read_noise_sigma": 0.014,
@@ -2736,7 +2736,7 @@
       },
       "error_px": 0.23286978533233868,
       "hit": true,
-      "time_ms": 62.19599999894854,
+      "time_ms": 45.70700000112993,
       "reference_noise": {
         "peak_electrons": 1825.0,
         "read_noise_sigma": 0.007,
@@ -2764,7 +2764,7 @@
       },
       "error_px": 0.1811654950638932,
       "hit": true,
-      "time_ms": 40.81210000003921,
+      "time_ms": 45.66230000273208,
       "reference_noise": {
         "peak_electrons": 2050.0,
         "read_noise_sigma": 0.009333333333333332,
@@ -2792,7 +2792,7 @@
       },
       "error_px": 0.2475074850415897,
       "hit": true,
-      "time_ms": 39.48309999759658,
+      "time_ms": 35.0360999982513,
       "reference_noise": {
         "peak_electrons": 2275.0,
         "read_noise_sigma": 0.011666666666666665,
@@ -2820,7 +2820,7 @@
       },
       "error_px": 417.7200209952971,
       "hit": false,
-      "time_ms": 43.842200000653975,
+      "time_ms": 32.63629999855766,
       "reference_noise": {
         "peak_electrons": 2500.0,
         "read_noise_sigma": 0.014,

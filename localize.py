@@ -76,8 +76,30 @@ def hybrid_localize(
 
     # 1. Global Search: Normalized Cross-Correlation
     ncc_surface = cv2.matchTemplate(search_gray, template, cv2.TM_CCOEFF_NORMED)
-    _, global_max, _, global_loc = cv2.minMaxLoc(ncc_surface)
-    ncc_x, ncc_y = global_loc
+    _, global_max, _, _ = cv2.minMaxLoc(ncc_surface)
+    
+    # Find all peaks that are mathematically tied with the maximum (within precision)
+    threshold = global_max - 1e-4
+    y_locs, x_locs = np.where(ncc_surface >= threshold)
+    
+    # Problem Statement MANDATORY Requirement:
+    # "If more than one matching region is found, return the one closest to the center of the Search Image."
+    search_center_x = search_gray.shape[1] / 2.0
+    search_center_y = search_gray.shape[0] / 2.0
+    
+    best_dist = float('inf')
+    best_loc = (0, 0)
+    
+    for px, py in zip(x_locs, y_locs):
+        # Coordinate of the template center if placed at (px, py)
+        cx = px + w / 2.0
+        cy = py + h / 2.0
+        dist = (cx - search_center_x)**2 + (cy - search_center_y)**2
+        if dist < best_dist:
+            best_dist = dist
+            best_loc = (int(px), int(py))
+            
+    ncc_x, ncc_y = best_loc
     
     # 2. Local Refinement: Extract Search Crop
     pad_h, pad_w = h * 2, w * 2

@@ -19,19 +19,28 @@ The system relies on a two-stage hybrid approach combining Normalized Cross-Corr
 - `evaluate.py`: Executes the localized tests against 100 dynamically generated cases, logging accuracy and coordinate deviations.
 - `Algorithm.md`: Contains mathematical documentation and failure mode analyses for the architecture.
 
-## Execution
+## Execution Commands
 
-Install the required dependencies:
-
+Install dependencies:
 ```bash
-python -m pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
-Run the automated evaluation pipeline:
-
+Generate a single diagnostic sample:
 ```bash
-./run_pipeline.bat
-# or for Linux/macOS:
+python3 dataset_generator.py --seed 1 --out_dir phase1_sample --sanity_check
+```
+
+Run manual localization; output is JSON:
+```bash
+python3 localize.py --reference phase1_sample/reference.png --search phase1_sample/search.png
+```
+
+Run the fully automated 100-pair evaluation:
+```bash
+python3 evaluate.py
+# Or use the wrapper scripts:
+# ./run_pipeline.bat
 # bash run_pipeline.sh
 ```
 

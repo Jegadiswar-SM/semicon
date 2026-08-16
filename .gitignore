@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+evaluation_results/
+phase1_sample/
+generated_samples/
+.DS_Store

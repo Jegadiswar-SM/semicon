@@ -1,0 +1,46 @@
+Background
+A modern wafer inspection tool must return to exactly the same site on a die – thousands of times per day, across hundreds of dies on every wafer. The first visit is straightforward: the tool finds the target site and records its location. Every subsequent visit must land at the identical spot with nanometre accuracy so that measurements are comparable across time and across different tools.
+
+In practice, this does not happen perfectly. Motion stages accumulate tiny errors between visits  drift from thermal expansion, vibration from the fab environment, and mechanical slack. These errors compound over time. By the time the tool revisits a site on a different die (or on the same die hours later), it may land several pixels away from the intended location.
+
+Because all dies on a wafer carry the same repeating circuit layout, the tool cannot simply look at the landed image and know it is wrong  the structure at the wrong location looks almost identical to the correct one. This is the core difficulty: finding a specific site inside a sea of visually similar repeating patterns.
+
+Applied Materials calls this challenge Navigation-Error Recovery. It is solved today with classical template-matching algorithms, but these break down in highly periodic layouts (DRAM memory arrays, FinFET gate structures) where hundreds of nearly identical features are visible in the same frame. AI and advanced computer vision approaches offer a path to more robust, higher-accuracy recovery.
+
+
+What your algorithm must produce:
+
+Find the location inside the Search Image where the Reference Image pattern appears (shrunk 10x).
+Return the center coordinates (x, y) in pixels of the matching region within the Search Image.
+If more than one matching region is found, return the one closest to the center of the Search Image.
+Background
+Dataset - Generate Your Own Dataset
+No Dataset Is Provided — You Must Generate Synthetic Data[Reference Synthetic Data](https://huggingface.co/spaces/aayushraina21/drift-sense-synthetic-data)
+What Your Synthetic Dataset Must Look Like
+Each training sample is an image pair: a Reference Image and a Search Image. You choose either DRAM-style or FinFET-style die architecture – both are judged equally.
+Architecture Style
+Reference Image Structure
+Search Image Structure
+DRAM-style
+Periodic horizontal word-lines and vertical bit-lines crossing at right angles, with a small contact/via dot at every intersection. High-contrast, fine pitch, extremely regular.
+A larger tiled version of the same DRAM grid, downsampled to 1000 x 1000 pixels to represent the 10x lower magnification. The reference pattern appears shrunk ~10x somewhere inside.
+FinFET-style
+Dense parallel vertical fin lines, crossed by one or two horizontal gate bars at the intersection region. High-contrast vertical structure with distinctive gate crossings.
+Same approach — a larger tiled FinFET layout, downsampled to 1000 x 1000. The reference appears as a small ~100 x 100 pixel inset somewhere inside the search image.
+Mandatory Requirements for Your Dataset Generator:
+Generate independent sensor noise for each image — do NOT reuse the same noise on both images. They are separate physical captures and must have independent noise patterns.
+Apply edge-brightening to mimic real SEM (Scanning Electron Microscope) image behaviour — SEM images show brighter contrast along feature edges.
+The true location of the reference pattern within the search image must be known and recorded — this is your ground truth for computing accuracy.
+Include realistic degradation: blur, rotation, and scaling variations. The search image will have more noise than the reference image on actual test data — design accordingly.
+Generate a minimum of 30 randomized image pairs for self-evaluation. Applied Materials will evaluate your algorithm on a separate set of generated test cases.
+Citation Requirement:
+Every augmentation choice, noise model, and structural parameter you select must be justified with at least 2-3 credible public references — academic papers, textbooks, or patents on semiconductor device structure or SEM imaging. These citations must appear in your final presentation. Unjustified augmentation choices will not receive full marks on the 30% augmentation score.
+STARTER SUPPORT: Applied Materials will provide a starter Python prompt (PIL/numpy) that generates one basic image pair showing the correct 1000×1000 pixel structure, 10x zoom relationship, and independent noise. This is a starting scaffold — not a complete dataset generator. Teams are expected to significantly extend it to add realistic variation, augmentation, and class diversity. A GitHub repository with additional code samples will be shared during the hackathon as per the event schedule
+Test Data — What Applied Materials Will Use
+Applied Materials will provide a separate set of synthetic image pairs as the official test set for Phase 2. This test set will:
+Be generated using a similar approach to what participants use — but with parameters, noise levels, and exact placement coordinates known only to Applied Materials.
+Contain at least 30 randomized image pairs covering both DRAM-style and FinFET-style layouts.
+Be MORE noisy than the training examples — search images in the test set will have higher noise levels to test algorithm robustness.
+Include at least one highly periodic array region where correct localization is genuinely difficult — this is specifically designed to test failure mode awareness. 
+
+
